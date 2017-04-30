@@ -1,0 +1,20 @@
+<nav id="navbar" class="navbar">
+    <div class="container">
+        <div class="nav-brand">
+            <a>
+                <img src="/images/logo_48.png"/> nitpum
+            </a>
+        </div>
+        <ul class="nav-main">
+        <% for (var i in theme.menu){ %>
+            <li>
+            <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+            </li>
+        <% } %>
+        </ul>
+        <div class="nav-burger">
+            <button onclick="nitpumNavBurger()">&#9776;</button>
+        </div>
+    </div>
+    <div class="clear"></div>
+</nav>

@@ -1,0 +1,66 @@
+.navbar {
+    width:100%;
+    background-color: @navbar-bg-color;
+
+    &.navbar-fixed {
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+    }
+
+    &.navbar-dropshadow {
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.05);
+    }
+
+    .nav-brand {
+        float: left;
+        margin: 0;
+        //padding: 14px 16px;
+        max-height: 48px;
+        max-width: 200px;
+    }
+
+    .nav-main {
+        float: left;
+        margin: auto;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+
+        li {
+            float:left;
+
+            a {
+                padding: 14px 16px;
+                text-decoration: none;
+                color: #000;
+                display: inline-block;
+                text-align: center;
+            }
+        }
+
+    }
+
+    .nav-burger {
+        button {
+            display: none;
+            padding: 14px 16px;
+            text-decoration: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: #000;
+            border: 0px solid;
+            background-color: transparent;
+        }
+    }
+
+    @media screen and (max-width: @container-width) {
+        .nav-burger {
+            button {
+                display: block;
+            }
+        }
+    }
+}
