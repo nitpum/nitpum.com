@@ -41,13 +41,13 @@ tags:
     http://www.skinspotlights.com/p/skinspotlights-replays.html
 
     เมื่อกดเข้าไปในลิงค์ ให้เลื่อนลงมาข้างล่างจะเจอลิงค์ดาวน์โหลดโปรแกรมเวอร์ชั่นต่างๆ
-    ![](/images/replay-lol-skinspotlights-1/01-download-link.gif)
+    ![](images/replay-lol-skinspotlights-1/01-download-link.gif)
 
 2. กดเลือกโหลดเวอร์ชั่นใหม่ <span style="color: red;">ดู Patch ให้ตรงกับเกมของเราด้วยนะครับ</span>
 3. หลังจากโหลดมาแล้วเราจะได้ไฟลล์ .zip ของโปรแกรมมา
-    ![](/images/replay-lol-skinspotlights-1/raw-02.jpg)
+    ![](images/replay-lol-skinspotlights-1/raw-02.jpg)
 4. แตกไฟลล์ออกมากเราจะได้ไฟลล์โปรแกรมเป็น .exe ครับและไม่จำเป็นต้องลงโปรแกรม 
-    ![](/images/replay-lol-skinspotlights-1/raw-03.jpg)
+    ![](images/replay-lol-skinspotlights-1/raw-03.jpg)
 
 
 ## <a name="setting"></a>การตั้งค่า 
@@ -55,14 +55,14 @@ tags:
 <span style="color:red;">หากไม่ทำการตั้งค่าบางครั้งรีเพลย์จะอัดไม่ติดนะครับ </span>
 1. คลิกขวาที่โปรแกรม
 2. กด **Properties**
-![](/images/replay-lol-skinspotlights-1/raw-04.jpg)
+![](images/replay-lol-skinspotlights-1/raw-04.jpg)
 3. กดไปที่แท็บ **Compatibillity**
 ต่อด้วยติ๊กถูกที่ช่อง **Run the program as an adminstrator**
 แล้วกด **OK**
-![](/images/replay-lol-skinspotlights-1/set-adminstrator.gif)
+![](images/replay-lol-skinspotlights-1/set-adminstrator.gif)
 4. เมื่อเรากดเข้าโปรแกรมจะมีให้ยืนยัน Adminstrator กด Yes ไปเลยครับ
 5. ไปที่แท็บ Options และตั้งค่าโดยมีรายละเอียดดังนี้ครับ
-    ![](/images/replay-lol-skinspotlights-1/ssl-option_update_rads.png)
+    ![](images/replay-lol-skinspotlights-1/ssl-option_update_rads.png)
     __หมายเลข 1 Game Path__
     กดปุ่ม Set ตรง Game Path เลือกที่อยู่ของเกม League of legends ที่ลงไว้ในเครื่อง
     เข้าไปที่โฟลล์เดอร์ที่เราลง League of  Legends ไว้
@@ -75,7 +75,7 @@ tags:
     
     จากนั้นเลือก League of Legends.exe แล้วกด Open <span style="color:red;"> ** &nbsp; หากไม่เห็นไฟลล์ League of Legends.exe 
     ให้กดเปลี่ยนสกุลไฟลล์จาก LoL Launcher.exe ไปเป็น Any EXE ดูตามภาพข้างล่างนี้นะครับ</span>
-    ![](/images/replay-lol-skinspotlights-1/find-lol.gif)
+    ![](images/replay-lol-skinspotlights-1/find-lol.gif)
 
     **หมายเลข 2 Replay Path** ให้เราเลือกโฟลเดอร์ที่เราต้องการจะเก็บไฟลล์รีเพลย์ไว้ครับ
     **หมายเลข 3 Record Spectated Game** หากต้องการจะอัดรีเพลย์ในตอนที่เราดูคนอื่นเล่นด้วยให้กดเปิดส่วนนี้ไว้นะครับ
@@ -88,13 +88,13 @@ tags:
 
 **ข้อควรรู้**
 บางครั้งหากพับโปรแกรมไป โปรแกรมจะไปอยู่ที่ลูกศรขวาล่างของหน้าจอนะครับ
-![](/images/replay-lol-skinspotlights-1/tray.jpg)
+![](images/replay-lol-skinspotlights-1/tray.jpg)
 
 ## <a name="play-replay"></a>การดูรีเพลย์
 รีเพลย์ต่างๆจะเรียงอยู่ด้านซ้ายนะครับ
 กดเลือก Replay ที่เราต้องการจะดูจากนั้นกด Play replay
 <span style="color:red;">หลังจากอัดรีเพลย์เสร็จใหม่ๆ ไฟลล์จะยังประมวลผลอยู่ จะดูได้ตอนที่ชื่อไฟลล์ปรากฏชื่อตัวละครที่เราเล่น</span>
-![](/images/replay-lol-skinspotlights-1/replay-leftside.png)
+![](images/replay-lol-skinspotlights-1/replay-leftside.png)
 
 
 เพียงเท่านี้เราก็สามารถอัดรีเพลย์ขณะเล่นเก็บไว้ดูทีหลังได้แล้วครับ

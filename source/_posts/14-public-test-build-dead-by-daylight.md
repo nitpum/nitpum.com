@@ -24,25 +24,25 @@ tags:
 ## <a name="install-ptb"></a>วิธีการติดตั้งตัวเกม Public Test Build
 
 1.  คลิกขวาเกม Dead by Daylight แล้วกด Properties (ภาษาไทยคือ คุณสมบัติ)  
-    ![](/images/14-public-test-build-dead-by-daylight/01.gif)
+    ![](images/14-public-test-build-dead-by-daylight/01.gif)
 
 2.  กดไปที่แท็บ **"BETAS"**
-    ![](/images/14-public-test-build-dead-by-daylight/02.gif)
+    ![](images/14-public-test-build-dead-by-daylight/02.gif)
 
 3.  3.1) พิมพ์โค๊ดในช่องว่างว่า **DbdPublicTest**
     3.2) กด **"Check Code"**
     3.3) กดที่ **"NONE"** เปลี่ยนเป็น **"public-beta"**  
-    ![](/images/14-public-test-build-dead-by-daylight/03.gif)
+    ![](images/14-public-test-build-dead-by-daylight/03.gif)
 
 4.  จากนั้นรอตัวเกมโหลดตัวเกม Public Test Build ลง เพียงเท่านี้เราก็เล่นแพตช์ Public Test Build ได้แล้ว  
-    ![](/images/14-public-test-build-dead-by-daylight/04.jpg)
+    ![](images/14-public-test-build-dead-by-daylight/04.jpg)
 
 ## <a name="uninstall-ptb"></a>วิธีการถอดการติดตั้ง Public Test Build กลับไปตัวเกมปกติ
 
 1.  ทำแบบเดียวกับตอนติดตั้งตัวเกม Public Test เลยครับ เพียงแต่ในแท็บ **"BETAS"** เปลี่ยนจาก **"public-beta"** เป็น **"NONE"** แค่นั้นเอง  
-    ![](/images/14-public-test-build-dead-by-daylight/revert-01.gif)
+    ![](images/14-public-test-build-dead-by-daylight/revert-01.gif)
 
 2.  จากนั้นรอโหลดตัวเกมปกติมาใหม่ก็กลับมาเล่นตัวเกมปกติได้แล้วครับ  
-    ![](/images/14-public-test-build-dead-by-daylight/04.jpg)
+    ![](images/14-public-test-build-dead-by-daylight/04.jpg)
 
 จบแล้วครับสำหรับวิธีการเล่น Public Test เพียงเท่านี้เวลามีคอนเท็นใหม่ที่กำลังจะมา เช่น ตัวละครใหม่ หรือ แมพใหม่อะไรพวกนี้เราก็จะได้เล่นก่อนใครเลย

@@ -9,6 +9,9 @@ before_script:
 
 pages:
   stage: deploy
+  cache:
+    paths:
+    - node_modules/
   script:
   - npm install hexo-cli -g
   - hexo deploy
