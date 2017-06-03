@@ -2,6 +2,10 @@
   "name": "nitpum-blog",
   "version": "0.0.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/nitpum/nitpum-blog"
+  },
   "scripts": {
     "start" : "hexo server",
     "build" : "hexo gen"
