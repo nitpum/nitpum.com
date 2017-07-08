@@ -1,3 +1,4 @@
 languageCode = "en-us"
 title = "Blog"
 baseURL = "http://example.org/"
+metaDataFormat = "yaml"
