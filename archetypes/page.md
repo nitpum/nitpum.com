@@ -1,5 +1,4 @@
 ---
 title:
-description:
-slug:
+description: ""
 ---
