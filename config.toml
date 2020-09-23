@@ -1,7 +1,0 @@
-languageCode = "en-us"
-title = "Blog"
-baseURL = "http://example.org/"
-canonifyURLs = true
-uglyurls = true
-theme = "nitpum-blog"
-metaDataFormat = "yaml"
