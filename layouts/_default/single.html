@@ -1,0 +1,27 @@
+{{ define "main" }}
+  <article>
+    <header>
+      <img src="{{ .Params.image }}" alt="Cover image" />
+    </header>
+    <div class="article__heading">
+      <h1>{{ .Title }}</h1>
+      <ul class="tags">
+        {{ range .Params.tags }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+      <p>
+        Posted on
+        <time datetime="{{ dateFormat "2006-01-02" .Date }}">
+          {{ dateFormat "02 Jan 2006" .Date }}
+        </time>
+        | {{ .ReadingTime }} minutes read
+      </p>
+    </div>
+
+    <div class="article__body">
+      {{ partial "table_of_content" . }}
+      {{ .Content }}
+    </div>
+  </article>
+{{ end }}

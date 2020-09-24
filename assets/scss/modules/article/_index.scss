@@ -1,0 +1,42 @@
+@import "variables";
+
+article {
+  margin: auto;
+  width: 100%;
+  max-width: $article_width;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Kanit", "Sarabun", "Roboto", "san-serif";
+  }
+
+  img {
+    margin: auto;
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .article__heading {
+    margin: auto;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    max-width: $article_body_width;
+    margin-bottom: 28px;
+  }
+
+  .article__body {
+    margin: auto;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    max-width: $article_body_width;
+    word-wrap: break-word;
+  }
+}

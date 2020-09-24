@@ -1,0 +1,13 @@
+$desktop: 800px;
+
+@mixin for-phone-only {
+  @media (max-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
