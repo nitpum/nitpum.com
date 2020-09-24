@@ -1,0 +1,7 @@
+baseURL: http://blog.nitpum.com/
+languageCode: en-us
+title: nitpum
+markup:
+  highlight:
+    lineNos: true
+    lineNumbersInTable: true
