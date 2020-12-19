@@ -1,0 +1,24 @@
+<nav class="navbar" role="navigation">
+  <div class="navbar__content">
+    <a href="{{ .Site.BaseURL }}">
+      <img
+        class="navbar__brand"
+        src="https://assets.nitpum.com/img/logo/48x48.png"
+        alt="{{ .Site.Title }} website icon "
+      />
+    </a>
+
+    <ul class="navbar__menu">
+      {{ range .Site.Menus.main }}
+        <li>
+          <a href="{{ .URL }}">
+            {{ if .Pre }}
+              {{ partial (string .Pre) }}
+            {{ end }}
+            {{ .Name }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+</nav>
