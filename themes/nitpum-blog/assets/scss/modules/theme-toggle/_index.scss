@@ -1,0 +1,27 @@
+
+.theme-toggle {
+  svg {
+    height: 18px;
+    user-select: none;
+    cursor: pointer;
+  }
+}
+
+body {
+  &.dark {
+    .theme-toggle {
+      .moon {
+        vertical-align: middle;
+        display: none;
+      }
+    }
+  }
+
+  &:not(.dark) {
+    .theme-toggle {
+      .sun {
+        display: none;
+      }
+    }
+  }
+}
