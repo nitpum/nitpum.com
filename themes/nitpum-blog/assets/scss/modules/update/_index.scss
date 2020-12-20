@@ -4,8 +4,8 @@
   margin-top: 40px;
   padding: 18px 18px;
   margin-bottom: 20px;
-  color: $white;
-  background-color: $red;
+  color: var(--highlight);
+  background-color: rgba(255, 0, 0, 0.05);
 
   &::before {
     position: absolute;
