@@ -39,5 +39,15 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--highlight);
+  color: var(--heading);
+}
+
+code {
+  background-color: var(--fg);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.text-primary {
+  color: var(--primary);
 }
