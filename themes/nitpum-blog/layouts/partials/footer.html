@@ -1,1 +1,10 @@
-<footer>&copy; Copyright {{ .Site.Title }}</footer>
+<footer id="footer">
+  <span>&copy; Copyright {{ now.Year }} {{ .Site.Title }}</span>
+  <span>&middot;</span>
+  <span>
+    Powered by
+    <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">
+      Hugo
+    </a>
+  </span>
+</footer>

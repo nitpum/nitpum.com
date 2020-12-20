@@ -1,2 +1,8 @@
-<h2>สารบัญ</h2>
-{{ .TableOfContents }}
+<div class="toc">
+  <details open>
+    <summary accesskey="c" title="(Alt +C)">
+      {{- i18n "toc" | default "Table of Contents" }}
+    </summary>
+    {{ .TableOfContents }}
+  </details>
+</div>

@@ -1,14 +1,58 @@
-<nav class="navbar" role="navigation">
-  <div class="navbar__content">
-    <a href="{{ .Site.BaseURL }}">
-      <img
-        class="navbar__brand"
-        src="https://assets.nitpum.com/img/logo/48x48.png"
-        alt="{{ .Site.Title }} website icon "
-      />
-    </a>
+{{- /*  theme-toggle is enabled  */}}
+{{- if (not .Site.Params.disableThemeToggle) }}
+  {{- /*  theme is light  */}}
+  {{- if (eq .Site.Params.defaultTheme "light") }}
+    <script>
+      if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add("dark");
+      }
+    </script>
+    {{- /*  theme is dark  */}}
+    {{- else if (eq .Site.Params.defaultTheme "dark") }}
+    <script>
+      if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove("dark");
+      }
+    </script>
+    {{- else }}
+    {{- /*  theme is auto  */}}
+    <script>
+      if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add("dark");
+      } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove("dark");
+      } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        document.body.classList.add("dark");
+      }
+    </script>
+  {{- end }}
+  {{- /*  theme-toggle is disabled and theme is auto  */}}
+  {{- else if (and (ne .Site.Params.defaultTheme "light") (ne .Site.Params.defaultTheme "dark")) }}
+  <script>
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      document.body.classList.add("dark");
+    }
+  </script>
+{{- end }}
 
-    <ul class="navbar__menu">
+<nav class="navbar" role="navigation">
+  <div class="content">
+    <div class="brand">
+      <a href="{{ .Site.BaseURL }}">
+        <img
+          src="https://assets.nitpum.com/img/logo/48x48.png"
+          alt="logo"
+          aria-label="logo"
+        />
+        {{ if .Site.Title }}
+          <div class="title">
+            {{ .Site.Title }}
+          </div>
+        {{ end }}
+      </a>
+      {{ partial "theme_toggle.html" . }}
+    </div>
+    <ul class="menu">
       {{ range .Site.Menus.main }}
         <li>
           <a href="{{ .URL }}">

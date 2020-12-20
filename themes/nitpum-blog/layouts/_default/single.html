@@ -2,21 +2,23 @@
   <article>
     <header>
       <img src="{{ .Params.image }}" alt="Cover image" />
-    </header>
-    <div class="article__heading">
-      <h1>{{ .Title }}</h1>
-      <ul class="tags">
-        {{ range .Params.tags }}
-          <li>{{ . }}</li>
+      <div class="article__heading">
+        <h1>{{ .Title }}</h1>
+        {{- if .Params.tags }}
+          <ul class="tags">
+            {{- range ($.GetTerms "tags") }}
+              <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+            {{- end }}
+          </ul>
         {{ end }}
-      </ul>
-      <p>
-        <time datetime="{{ dateFormat "2006-01-02" .Date }}">
-          {{ dateFormat "January 02, 2006" .Date }}
-        </time>
-        &bull; {{ .ReadingTime }} minutes read
-      </p>
-    </div>
+        <p>
+          <time datetime="{{ dateFormat "2006-01-02" .Date }}">
+            {{ dateFormat "January 02, 2006" .Date }}
+          </time>
+          &bull; {{ .ReadingTime }} minutes read
+        </p>
+      </div>
+    </header>
 
     <div class="article__body">
       {{ partial "table_of_content" . }}

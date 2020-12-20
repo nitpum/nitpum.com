@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="{{ .Site.Language }}">
   <head>
     {{ partial "head.html" . }}
   </head>
   <body>
-    {{ partial "navbar.html" . }}
+    {{ partialCached "navbar.html" . }}
+
     <main>
       {{ block "main" . }} {{ end }}
     </main>
-    {{ partial "footer.html" . }}
+    {{ partialCached "footer.html" . }}
 
-    {{ partial "foot.html" . }}
+    {{ partialCached "foot.html" . }}
   </body>
 </html>

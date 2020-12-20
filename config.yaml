@@ -2,12 +2,16 @@ baseURL: http://blog.nitpum.com/
 languageCode: en-us
 title: nitpum
 theme: nitpum-blog
+
+params:
+  defaultTheme: auto
+
 markup:
   highlight:
     lineNos: true
     lineNumbersInTable: true
+
 menu:
   main:
-    - name: Home
-      pre: svgs/home.svg
+    - name: Blog
       url: /
