@@ -15,7 +15,9 @@
           <time datetime="{{ dateFormat "2006-01-02" .Date }}">
             {{ dateFormat "January 02, 2006" .Date }}
           </time>
-          &bull; {{ .ReadingTime }} minutes read
+          {{ if gt .ReadingTime 0 }}
+            &bull; {{ .ReadingTime }} minutes read
+          {{ end }}
         </p>
       </div>
     </header>
