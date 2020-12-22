@@ -1,22 +1,71 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>
-  {{ block "title" . }} {{ if .Title }}{{ .Title }} | {{ end }}
-  {{ .Site.Title }}{{ end }}
+  {{ block "title" . }}{{ if .Title }}{{ .Title }} |
+  {{ end }}{{ .Site.Title }}{{ end }}
 </title>
 
+<meta
+  name="keywords"
+  content="{{ if .Params.keywords -}}
+    {{- range $i, $e := .Params.keywords }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} {{- else }}
+    {{- range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} {{- end -}}"
+/>
+<meta
+  name="description"
+  content="{{- with .Description }}{{ . }}{{- else }}{{- if .IsPage }}
+    {{- .Summary | default (printf "%s - %s" .Title  .Site.Title) }}{{- else }}
+    {{- with .Site.Params.description }}{{ . }}{{- end }}{{- end }}{{- end -}}"
+/>
 <link
   rel="canonical"
   href="{{ if .Params.canonicalURL -}} {{ trim .Params.canonicalURL " " }} {{- else -}} {{ .Permalink }} {{- end }}"
 />
+<!-- Favicon -->
+<link
+  rel="icon"
+  href="{{- .Site.Params.assets.favicon | default "favicon.ico" | absURL -}}"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="16x16"
+  href="
+    {{- .Site.Params.assets.favicon16x16 | default "favicon-16x16.png" | absURL -}}"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="32x32"
+  href="
+    {{- .Site.Params.assets.favicon32x32 | default "favicon-32x32.png" | absURL -}}"
+/>
+<link
+  rel="apple-touch-icon"
+  href="
+    {{- .Site.Params.assets.apple_touch_icon | default "apple-touch-icon.png" | absURL -}}"
+/>
+<link
+  rel="mask-icon"
+  href="{{- .Site.Params.assets.safari_pinned_tab | default "safari-pinned-tab.svg" | absURL -}}"
+/>
+<!-- theme -->
+<meta name="theme-color" content="#222" />
+<meta name="msapplication-TileColor" content="#222" />
+{{- if .Site.Params.analytics.google.SiteVerificationTag }}
+  <meta
+    name="google-site-verification"
+    content="{{ .Site.Params.analytics.google.SiteVerificationTag }}"
+  />
+{{- end }}
 
 <!-- Styles-->
 {{ $stylesOptions := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" true) }}
 {{ $styles := resources.Get "scss/index.scss" | toCSS $stylesOptions }}
 <link rel="preload stylesheet" href="{{ $styles.Permalink }}" as="style" />
 <link
+  rel="preload stylesheet"
   href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Kanit:wght@400;500;700&family=Roboto:wght@400;500&family=Sarabun:ital,wght@0,400;0,500;0,700;1,400&display=swap"
-  rel="stylesheet"
 />
 
 <!-- RSS-->
@@ -30,3 +79,6 @@
 {{- range .Translations -}}
   <link rel="alternate" hreflang="{{- .Lang -}}" href="{{- .Permalink -}}" />
 {{ end }}
+
+<!-- Generator -->
+{{- hugo.Generator }}

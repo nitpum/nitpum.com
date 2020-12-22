@@ -1,6 +1,6 @@
 @import "variables";
 
-article {
+.post-single {
   margin: auto;
   width: 100%;
   max-width: $article_width;
@@ -15,6 +15,11 @@ article {
   }
 
   header {
+    
+    figure {
+      margin: 0;
+    }
+
     @include for-desktop-up {
       img {
         border-radius: 12px;
@@ -27,7 +32,7 @@ article {
     width: 100%;
   }
 
-  .article__heading {
+  .heading {
     margin: auto;
     width: 100%;
     padding-left: $article_side_padding;
@@ -37,7 +42,7 @@ article {
     margin-bottom: 28px;
   }
 
-  .article__body {
+  .content {
     margin: auto;
     width: 100%;
     padding-left: $article_side_padding;

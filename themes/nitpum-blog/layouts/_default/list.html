@@ -1,1 +1,21 @@
-{{ define "main" }} list {{ end }}
+{{ define "main" }}
+  <div class="post-list">
+    {{ range .Paginator.Pages }}
+      <article class="post-card">
+        <header>
+          {{ partial "cover" . }}
+          <h2 class="title">{{ .Title }}</h2>
+        </header>
+        {{ if .IsPage }}
+          <p>
+            <time datetime="{{ dateFormat "2006-01-02" .Date }}">
+              {{ dateFormat "January 02, 2006" .Date }}
+            </time>
+            &bull; {{ .ReadingTime }} min
+          </p>
+        {{ end }}
+        <a href="{{ .Permalink }}"></a>
+      </article>
+    {{ end }}
+  </div>
+{{ end }}

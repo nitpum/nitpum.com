@@ -43,9 +43,10 @@ h6 {
 }
 
 code {
-  background-color: var(--fg);
   padding: 4px 8px;
   border-radius: 4px;
+  color: $code-text;
+  background-color: $code-bg;
 }
 
 .text-primary {

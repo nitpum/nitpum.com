@@ -1,0 +1,10 @@
+<figure>
+  {{ with .Resources }}
+    {{ with .GetMatch "cover.*" }}
+      {{ $cover := . }}
+      {{ with $cover }}
+        <img src="{{ .Permalink }}" alt="{{ .Title }}" />
+      {{ end }}
+    {{ end }}
+  {{ end }}
+</figure>

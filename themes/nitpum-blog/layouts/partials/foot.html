@@ -1,16 +1,4 @@
-<!-- anchor-->
-<script
-  src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js"
-  integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg=="
-  crossorigin="anonymous"
-></script>
-<script>
-  anchors.options = {
-    placement: "left",
-  };
-  anchors.add();
-</script>
-
+<!-- theme -->
 <script>
   document.getElementById("theme-toggle").addEventListener("click", () => {
     if (document.body.className.includes("dark")) {
@@ -22,3 +10,18 @@
     }
   });
 </script>
+<!-- anchor-->
+
+{{ if .IsPage }}
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.2/anchor.min.js"
+    integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg=="
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    anchors.options = {
+      placement: "left",
+    };
+    anchors.add();
+  </script>
+{{ end }}

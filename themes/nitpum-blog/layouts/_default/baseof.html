@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Language }}">
+<html lang="{{ .Params.languageCode | default .Site.Language }}">
   <head>
     {{ partial "head.html" . }}
   </head>
@@ -11,6 +11,6 @@
     </main>
     {{ partialCached "footer.html" . }}
 
-    {{ partialCached "foot.html" . }}
+    {{ partial "foot.html" . }}
   </body>
 </html>

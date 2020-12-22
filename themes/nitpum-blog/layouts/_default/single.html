@@ -1,8 +1,8 @@
 {{ define "main" }}
-  <article>
+  <article class="post-single">
     <header>
-      <img src="{{ .Params.image }}" alt="Cover image" />
-      <div class="article__heading">
+      {{ partial "cover" . }}
+      <div class="heading">
         <h1>{{ .Title }}</h1>
         {{- if .Params.tags }}
           <ul class="tags">
@@ -20,7 +20,7 @@
       </div>
     </header>
 
-    <div class="article__body">
+    <div class="content">
       {{ partial "table_of_content" . }}
       {{ .Content }}
     </div>

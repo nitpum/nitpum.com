@@ -1,0 +1,47 @@
+.post-list {
+  max-width: $container;
+  margin: auto;
+  display: flex;
+  gap: 6px;
+
+  .post-card {
+    padding: 4px 6px;
+    width: 100%;
+    max-width: 30%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: var(--fg);
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .title {
+      margin: 12px 0;
+      font-size: 18px;
+      flex: 1;
+      color: var(--heading);
+    }
+
+    p {
+      margin: 0;
+    }
+  
+    a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
