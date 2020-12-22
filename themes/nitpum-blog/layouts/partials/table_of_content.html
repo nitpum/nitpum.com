@@ -1,8 +1,10 @@
-<div class="toc">
-  <details open>
-    <summary accesskey="c" title="(Alt +C)">
-      {{- i18n "toc" | default "Table of Contents" }}
-    </summary>
-    {{ .TableOfContents }}
-  </details>
-</div>
+{{ if and (gt (len .TableOfContents) 80) (ne .Params.disableToc true) }}
+  <div class="toc">
+    <details open>
+      <summary accesskey="c" title="(Alt +C)">
+        {{- i18n "toc" | default "Table of Contents" }}
+      </summary>
+      {{ .TableOfContents }}
+    </details>
+  </div>
+{{ end }}
