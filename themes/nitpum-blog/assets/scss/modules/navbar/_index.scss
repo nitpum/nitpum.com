@@ -7,10 +7,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    overflow: hidden;
     width: 100%;
-    max-width: 900px;
-    height: 60px;
+    max-width: $container;
     justify-content: space-between;
     vertical-align: middle;
   }
@@ -45,12 +43,16 @@
     display: flex;
     padding-left: 0;
     margin: 0;
+    height: 100%;
 
     li {
       a {
         display: flex;
-        padding: 1em;
+        height: 60px;
+        padding: 0px 16px;
         text-decoration: none;
+        align-items: center;
+        color: var(--content);
 
         svg {
           margin-right: 4px;
