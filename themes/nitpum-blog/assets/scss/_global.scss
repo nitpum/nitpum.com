@@ -55,3 +55,9 @@ h6 {
 .text-primary {
   color: var(--primary);
 }
+
+.container {
+  margin: auto;
+  width: 100%;
+  max-width: $container;
+}
