@@ -42,12 +42,15 @@ h6 {
   color: var(--heading);
 }
 
-code {
-  padding: 4px 8px;
-  border-radius: 4px;
-  color: var(--code-text);
-  background-color: var(--code-bg);
-}
+// FIXME: Don't know why it not works
+// :not(div.highlight) {
+//   code {
+//     padding: 4px 8px;
+//     border-radius: 4px;
+//     color: var(--code-text);
+//     background-color: var(--code-bg);
+//   }
+// }
 
 .text-primary {
   color: var(--primary);
