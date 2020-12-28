@@ -45,8 +45,8 @@ h6 {
 code {
   padding: 4px 8px;
   border-radius: 4px;
-  color: $code-text;
-  background-color: $code-bg;
+  color: var(--code-text);
+  background-color: var(--code-bg);
 }
 
 .text-primary {

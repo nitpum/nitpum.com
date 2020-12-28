@@ -3,6 +3,8 @@
   --fg: rgba(0, 0, 0, 0.04);
   --heading: rgba(0, 0, 0, 0.80);
   --content: rgba(0, 0, 0, 0.88);
+  --code-text: #f8f8f2;
+  --code-bg: #272822;
   --primary: #35a65e;
 }
 
@@ -11,4 +13,6 @@
   --fg: rgba(255, 255, 255, 0.04);
   --heading: rgba(255, 255, 255, 0.80);
   --content: rgba(255, 255, 255, 0.64);
+  --code-text: #272822;
+  --code-bg: #f8f8f8;
 }

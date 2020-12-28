@@ -1,6 +1,19 @@
+$phone: 425px;
 $desktop: 800px;
 
 @mixin for-phone-only {
+  @media (max-width: $phone) {
+    @content;
+  }
+}
+
+@mixin for-phone-up {
+  @media (min-width: $phone) {
+    @content;
+  }
+}
+
+@mixin for-tablet {
   @media (max-width: $desktop) {
     @content;
   }

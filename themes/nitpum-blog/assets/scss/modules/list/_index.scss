@@ -2,6 +2,7 @@
   max-width: $container;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
   gap: 6px;
 
   .post-card {
@@ -12,6 +13,10 @@
     display: flex;
     flex-direction: column;
     border-radius: 4px;
+
+    @media (max-width: 475px) {
+      max-width: 100%;
+    }
 
     &:hover {
       background-color: var(--fg);
