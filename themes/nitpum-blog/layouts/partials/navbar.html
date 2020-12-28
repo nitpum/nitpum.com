@@ -39,13 +39,15 @@
   <div class="content">
     <div class="brand">
       <a href="{{ .Site.BaseURL }}">
-        <img
-          src="https://assets.nitpum.com/img/logo/48x48.png"
-          width="48"
-          height="48"
-          alt="logo"
-          aria-label="logo"
-        />
+        {{ if .Site.Params.Logo }}
+          <img
+            src="{{ .Site.Params.Logo.Permalink }}"
+            width="{{ .Site.Params.Logo.Width | default 48 }}"
+            height="{{ .Site.Params.Logo.Height | default 48 }}"
+            alt="logo"
+            aria-label="logo"
+          />
+        {{ end }}
         {{ if .Site.Title }}
           <div class="title">
             {{ .Site.Title }}
