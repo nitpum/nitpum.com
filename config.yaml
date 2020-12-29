@@ -4,6 +4,7 @@ title: nitpum
 theme: nitpum-blog
 
 params:
+  copyright: Copyright
   Logo:
     Permalink: /logo-64x64.png
   defaultTheme: auto
