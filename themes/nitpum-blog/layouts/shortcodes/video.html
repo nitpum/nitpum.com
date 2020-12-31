@@ -1,0 +1,26 @@
+{{- $src := .Get "src" -}}
+{{- $mp4 := "" -}}
+
+{{- $video_files := (.Page.Resources.Match (printf "%s*" $src)) -}}
+{{- $poster := ((.Page.Resources.ByType "image").GetMatch (printf "%s*" $src)) -}}
+
+{{- with $video_files -}}
+  {{- range . -}}
+    {{- if or (in .MediaType.Suffixes "mp4") (in .MediaType.Suffixes "m4v") -}}
+      {{- $mp4 = . -}}
+    {{- end -}}
+    {{- if (in .MediaType.Suffixes "webm") -}}
+      {{- $video_webm = . -}}
+    {{- end -}}
+    {{- if (in .MediaType.Suffixes "ogv") -}}
+      {{- $video_ogg = . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+
+<video preload="auto" {{ if eq (.Get "controls") "true"}}controls{{ end }} {{ if eq (.Get "autoplay") "true"}}autoplay{{ end }} {{ if eq (.Get "loop") "true"}}loop{{ end }} {{ if eq (.Get "muted") "true" }}muted {{ end }} width="{{ .Get "width" | default "100%" }}" {{ with $poster }}poster="{{ .RelPermalink }}" {{ end }}>
+  {{- with $mp4 -}}
+    <source src="{{ .RelPermalink }}" type="video/mp4">
+  {{ end }}
+</video>
