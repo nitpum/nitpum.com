@@ -11,6 +11,9 @@ params:
   assets:
     safari_pinned_tab: apple-touch-icon.png
 
+permalinks:
+  blog: /:year/:month/:filename/
+
 markup:
   highlight:
     lineNos: true
