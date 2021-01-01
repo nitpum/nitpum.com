@@ -2,7 +2,7 @@
 title: วิธีอัด Replay LoL ด้วย SkinSpotLights Replay
 languageCode: th
 date: 2015-11-21T17:00:00.000
-url: /2015/11/replay-lol-skinspotlights-1.html
+aliases: [/2015/11/replay-lol-skinspotlights-1.html]
 tags:
   - game
   - how-to
