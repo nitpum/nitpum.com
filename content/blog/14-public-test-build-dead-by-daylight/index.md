@@ -5,7 +5,7 @@ draft: false
 aliases: ["/2017/02/14-public-test-build-dead-by-daylight.html"]
 languageCode: th
 tags:
-  - Dead by Daylight,
+  - Dead by Daylight
   - Public Test
   - How To
   - Game
