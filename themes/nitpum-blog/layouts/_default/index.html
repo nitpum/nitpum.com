@@ -1,6 +1,6 @@
 {{ define "main" }}
   <div class="post-list">
-    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "blog") }}
+    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "post") }}
     {{ range $paginator.Pages }}
       {{ partial "list-post-item" . }}
     {{ end }}

@@ -1,2 +1,27 @@
 .toc {
+  background-color: var(--fg);
+  padding: 8px 16px;
+  border-radius: var(--radius);
+
+  details {
+    summary {
+      cursor: zoom-in;
+    }
+
+    &[open] {
+      summary {
+        cursor: zoom-out;
+      }
+    }
+
+    a {
+      color: var(--content);
+      padding: 4px 0;
+      display: block;
+    }
+
+    ul {
+      margin: 0;
+    }
+  }
 }

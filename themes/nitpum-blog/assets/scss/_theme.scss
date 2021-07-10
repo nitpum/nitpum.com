@@ -1,18 +1,19 @@
 :root {
   --bg: #fff;
-  --fg: rgba(0, 0, 0, 0.04);
+  --fg: rgba(0, 0, 0, 0.06);
   --heading: rgba(0, 0, 0, 0.80);
   --content: rgba(0, 0, 0, 0.88);
   --code-text: #f8f8f2;
   --code-bg: #272822;
   --primary: #35a65e;
+  --radius: 12px;
 }
 
 .dark {
-  --bg: #222;
-  --fg: rgba(255, 255, 255, 0.04);
-  --heading: rgba(255, 255, 255, 0.80);
-  --content: rgba(255, 255, 255, 0.64);
+  --bg: #1f1f1f;
+  --fg: rgba(255, 255, 255, 0.12);
+  --heading: rgba(255, 255, 255, 0.90);
+  --content: rgba(255, 255, 255, 0.80);
   --code-text: #272822;
   --code-bg: #f8f8f8;
 }

@@ -4,6 +4,7 @@ title: nitpum
 theme: nitpum-blog
 
 params:
+  description: nitpum blog
   copyright: Copyright
   Logo:
     Permalink: /logo-64x64.png
@@ -12,7 +13,7 @@ params:
     safari_pinned_tab: apple-touch-icon.png
 
 permalinks:
-  blog: /:year/:month/:filename/
+  post: /:year/:month/:filename/
 
 markup:
   highlight:
@@ -21,12 +22,9 @@ markup:
 
 menu:
   main:
-    - name: Home
+    - name: Blog
       url: /
       weight: 1
-    - name: Blog
-      url: /blog
-      weight: 2
     - name: Tags
       url: /tags
       weight: 3
