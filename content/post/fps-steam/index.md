@@ -3,7 +3,7 @@ title: "วิธีแสดง FPS เกมบน Steam"
 date: 2017-03-11T13:20:00.003+07:00
 draft: false
 aliases: ["/2017/03/fps-steam.html"]
-tags: [วิธีการ, FPS, Game, เกม, Article, How To, Steam]
+tags: [blog, วิธีการ, fps, game, article, เกม, how-to, steam]
 disableToc: true
 ---
 

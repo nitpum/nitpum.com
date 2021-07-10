@@ -4,6 +4,7 @@ date: 2017-06-02T23:01:00.001+07:00
 languageCode: th
 aliases: ["/2017/06/quickly-use-discord_2.html"]
 tags:
+  - blog
   - วิธีการ
   - game
   - เกม
@@ -50,6 +51,7 @@ tags:
 1.  คลิกที่ วงกลมเซิฟเวอร์ ที่เพิ่มขึ้นมา
 2.  ดูที่ด้านซ้ายครับเลื่อนหาห้องที่มีรูปลำโพงอยู่จะเป็น Voice channel สามารถเข้าไปพูดเปิดไมค์ได้ครับ
     {{< figure src="discord_join_voice_ch.jpg">}}
+    ![Join discord voice channel](discord_join_voice_ch.jpg)
 
 3.  กดเข้าห้องก็คุยกับเพื่อนได้แล้วครับ **พร้อมลุย !**  
     3.1 ห้องที่มีรูปลำโพงคือ Voice Channel เป็นห้องสำหรับเปิดไมค์คุยครับ  

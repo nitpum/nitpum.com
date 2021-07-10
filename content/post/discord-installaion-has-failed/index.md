@@ -3,33 +3,26 @@ title: 'แก้ปัญหา Discord ลงไม่ได้ Installaion ha
 date: 2017-06-17T20:11:00.004+07:00
 draft: false
 aliases: [ "/2017/06/discord-installaion-has-failed.html" ]
-tags : [วิธีการ, Game, แก้ปัญหา, Article, Discord, How To, ติดตั้งโปรแกรม]
+tags : [blog, วิธีการ, game, แก้ปัญหา, article, discord, how-to, ติดตั้งโปรแกรม]
+disableToc: true
 ---
-
-[![](https://4.bp.blogspot.com/-r85AVvK4pds/WUUpZXbSlvI/AAAAAAAAB38/yhLoSgH0h_Q9TafDnmuYsfPUs1uHPuhYgCLcBGAs/s640/cover.jpg)](https://4.bp.blogspot.com/-r85AVvK4pds/WUUpZXbSlvI/AAAAAAAAB38/yhLoSgH0h_Q9TafDnmuYsfPUs1uHPuhYgCLcBGAs/s1600/cover.jpg)
-
   
-สวัสดีครับบทความนี้จะมาบอก**วิธีแก้ปัญหา** สำหรับใครที่ติดตั้ง Discord แล้วพบปัญหา **Installation has failed**  
-เพื่อนผมพึง Reset this PC เพื่อล้างคอมลง Windows ใหม่แล้วเจอปัญหานี้ก็เลยแชร์วิธีการแก้เผื่อมีประโยชน์กับคนที่ติดปัญหานี้เหมือนกัน  
+สวัสดีครับบทความนี้จะมาบอก**วิธีแก้ปัญหา** สำหรับใครที่ติดตั้ง Discord แล้วพบปัญหา **Installation has failed**  เพื่อนผมพึง Reset this PC เพื่อล้างคอมลง Windows ใหม่แล้วเจอปัญหานี้ก็เลยแชร์วิธีการแก้เผื่อมีประโยชน์กับคนที่ติดปัญหานี้เหมือนกัน  
 
 [![](https://4.bp.blogspot.com/-5G8tFZbxAic/WUUfl_kUVrI/AAAAAAAAB3k/TsXFNN3GPeEB3R3BF-GdAWUH9w3Oh-5MwCLcBGAs/s320/error.jpg)](https://4.bp.blogspot.com/-5G8tFZbxAic/WUUfl_kUVrI/AAAAAAAAB3k/TsXFNN3GPeEB3R3BF-GdAWUH9w3Oh-5MwCLcBGAs/s1600/error.jpg)
 
   
-
-[](https://www.blogger.com/blogger.g?blogID=5206953906143286438#%E0%B8%AA%E0%B8%B2%E0%B9%80%E0%B8%AB%E0%B8%95%E0%B8%B8 "สาเหตุ")สาเหตุ
---------------------------------------------------------------------------------------------------------------------------------------
+## สาเหตุ
 
 ปัญหานี้เกิดจากการที่มีตัวไฟล์ของโปรแกรม Discord อยู่บนเครื่องอยู่แล้วแต่ตัวโปรแกรมไม่สมบูรณ์หรือเสียหาย ส่วนมากมักจะเจอกับคนที่พึ่งลง Windows ใหม่ หรือ Reset Windows มาหรือมีไฟล์โปรแกรมเก่าค้างอยู่ในเครื่อง  
 
-[](https://www.blogger.com/blogger.g?blogID=5206953906143286438#%E0%B8%A7%E0%B8%B4%E0%B8%98%E0%B8%B5%E0%B9%81%E0%B8%81%E0%B9%89 "วิธีแก้")วิธีแก้
--------------------------------------------------------------------------------------------------------------------------------------------------
+## วิธีแก้
 
 ต้องลบตัวไฟล์โปรแกรมที่มีอยู่ทั้งหมดออกไปครับ (โดยปกติแล้วจะอยู่ที่ %AppData%/Discord และ %AppData%/../local/Discord)  
 
 1.  เช็คให้แน่ใจว่าโปรแกรมไม่ได้ค้างเปิดอยู่ในเครื่องรวมไปถึง**ไม่ได้เปิดในบราวเซอร์**ด้วยครับ เช็คได้จาก **Task manager** ครับ (กดปุ่ม Ctrl + Shift + Esc)  
     อย่าลืมกด **More details ด้วยนะครับ**  
     ถ้าเปิดอยู่ก็กด End task ไปครับ  
-     
     
     [![](https://1.bp.blogspot.com/-eMBkioQR0yA/XKm-VI736QI/AAAAAAAAF5M/-2cBv9YhICIVo6_SINeGDyDeF6q1ARJTwCLcBGAs/s320/task-manager-more-details.png)](https://1.bp.blogspot.com/-eMBkioQR0yA/XKm-VI736QI/AAAAAAAAF5M/-2cBv9YhICIVo6_SINeGDyDeF6q1ARJTwCLcBGAs/s1600/task-manager-more-details.png)
     
