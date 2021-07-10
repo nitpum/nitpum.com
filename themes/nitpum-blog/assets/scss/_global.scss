@@ -61,3 +61,16 @@ h6 {
   width: 100%;
   max-width: $container;
 }
+
+table {
+  max-width: 100%;
+  
+  th, td {
+    padding: 16px;
+    border-bottom: 1px solid var(--fg);
+  }
+
+  th {
+    border-bottom: 2px solid var(--fg);
+  }
+}

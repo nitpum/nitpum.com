@@ -66,6 +66,14 @@ Anime
 Looks like something has update.
 {{</update>}}
 
+## Table
+
+| Name  | Description |
+| ----- | ----------- |
+| Kabuto | Kamen rider |
+| Faiz | I'm Orphnoch |
+| Decade | Just passing through |
+
 ## Code Blocks
 
 Inline `This is a inline codeblock.`
