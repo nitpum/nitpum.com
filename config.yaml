@@ -2,6 +2,7 @@ baseURL: http://blog.nitpum.com/
 languageCode: en-us
 title: nitpum
 theme: nitpum-blog
+enableRobotsTXT: true
 
 params:
   description: nitpum blog
