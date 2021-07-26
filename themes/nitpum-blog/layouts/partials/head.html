@@ -1,10 +1,17 @@
-<meta charset="UTF-8" />
+<meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>
   {{ block "title" . }}{{ if .Title }}{{ .Title }} |
   {{ end }}{{ .Site.Title }}{{ end }}
 </title>
 
+{{ if hugo.IsProduction | or (eq .Site.Params.env "production") }}
+<meta name="robots" content="all">
+{{ else }}
+<meta name=" robots" content="noindex, nofollow">
+{{ end }}
+
+<!-- Title -->
 <meta
   name="keywords"
   content="{{ if .Params.keywords -}}

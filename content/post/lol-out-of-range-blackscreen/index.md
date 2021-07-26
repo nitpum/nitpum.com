@@ -3,7 +3,7 @@ title: 'LoL แก้หน้าจอ Out of Range หรือจอดำ Bl
 date: 2017-06-29T12:30:00.004+07:00
 draft: false
 aliases: [ "/2017/06/lol-out-of-range-blackscreen.html" ]
-tags : [blog, game, แก้ปัญหา, เกม, hwo-to, league of legends, LoL]
+tags : [blog, game, แก้ปัญหา, เกม, how-to, league of legends, lol]
 disableToc: true
 ---
   
@@ -22,6 +22,6 @@ disableToc: true
 2.  จากนั้นเข้าไปที่ **/Apps/LoLTH/Game/Config**
 3.  เปิดไฟล์ **game.cfg** ด้วย Notepad
 4.  ค้นหาคำว่า **WindowMode**
-5.  ให้แก้จาก **WindowMode=0** เป็น **WindowMode=2** ดังรูป {{< figure src="WindowMode2.jpg" >}}
+5.  ให้แก้จาก **WindowMode=0** เป็น **WindowMode=2** ดังรูป ![Set window mode to 2](WindowMode2.jpg)
 6.  จากนั้น **save** และ **เปิดเกมใหม่** ก็เรียบร้อยแล้วครับ  
     แต่อย่าลืมไปลองทดสอบดูก่อนนะครับ :)

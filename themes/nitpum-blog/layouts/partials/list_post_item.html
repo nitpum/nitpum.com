@@ -1,0 +1,27 @@
+<a  class="post-card" href="{{ .Permalink }}" aria-label="{{ .Title }}">
+  <article>
+    <header>
+      {{ with .Resources.GetMatch "cover.*" }}
+        {{ $cover := . }}
+        {{ with $cover.Fill "288x144 center" }}
+          <figure>
+            <img src="{{ .Permalink }}" alt="{{ .Title }}" width="{{ .Width }}" height="{{ .Height }}" />
+          </figure>
+        {{ end }}
+      {{ else }}
+          <figure>
+            <img src="" alt="{{ .Title }}" />
+          </figure>
+      {{ end }}
+      <h2 class="title">{{ .Title }}</h2>
+    </header>
+    {{ if .IsPage }}
+      <p>
+        <time datetime="{{ dateFormat "2006-01-02" .Date }}">
+          {{ dateFormat "January 02, 2006" .Date }}
+        </time>
+        &bull; {{ .ReadingTime }} min
+      </p>
+    {{ end }}
+  </article>
+</a>

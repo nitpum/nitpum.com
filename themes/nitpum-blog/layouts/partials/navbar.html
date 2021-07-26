@@ -54,7 +54,6 @@
           </div>
         {{ end }}
       </a>
-      {{ partial "theme_toggle.html" . }}
     </div>
     <ul class="menu">
       {{ range .Site.Menus.main }}
@@ -67,6 +66,11 @@
           </a>
         </li>
       {{ end }}
+      <li>
+        <a href="#">
+          {{ partial "theme_toggle.html" . }}
+        </a>
+      </li>
     </ul>
   </div>
 </nav>

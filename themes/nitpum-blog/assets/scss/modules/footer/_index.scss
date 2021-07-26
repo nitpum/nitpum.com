@@ -5,4 +5,18 @@ footer {
     margin: 50px 0px;
     bottom: 0;
   }
+
+	.footer-social {
+		display: flex;
+		margin: auto;
+		width: fit-content;
+		max-width: var(--content-width);
+		text-align: center;
+
+		a {
+			display: block;
+			color: var(--content);
+			margin: 0 8px;
+		}
+	}
 }

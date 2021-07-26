@@ -1,10 +1,15 @@
 .theme-toggle {
   margin-left: 4px;
+  background-color: transparent;
+  border: 0 transparent;
+  color: var(--content);
+  cursor: pointer;
+  width: 48px;
+  height: fit-content;
 
   svg {
     height: 18px;
     user-select: none;
-    cursor: pointer;
   }
 }
 

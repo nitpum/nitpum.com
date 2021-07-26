@@ -21,10 +21,19 @@
         </p>
       </div>
     </header>
-
     <div class="content">
       {{ partial "table_of_content" . }}
       {{ .Content }}
     </div>
   </article>
+  <div>
+    {{ $related := .Site.RegularPages.Related . | first 3 }}
+      {{ with $related }}
+        <div class="post-list">
+          {{ range . }}
+          {{ partial "list_post_item" . }}
+          {{ end }}
+        </div>
+    {{ end }}
+  </div>
 {{ end }}

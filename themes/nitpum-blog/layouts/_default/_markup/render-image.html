@@ -1,0 +1,16 @@
+{{ $imgPath := .Destination | safeURL }}
+
+{{ if not (strings.HasPrefix .Destination "http") -}}
+  {{ $imgPath = (.Destination | safeURL )}}
+{{ end }}
+
+<img
+  src="{{ $imgPath }}"
+  alt="{{ .Text }}"
+  loading="lazy"
+  {{ if not (strings.HasPrefix .Destination "http") -}}
+  {{ $img := imageConfig (printf "content/%s/%s" .Page.Dir .Destination) }}
+  width="{{ $img.Width }}"
+  height="{{ $img.Height }}"
+  {{ end }}
+/>

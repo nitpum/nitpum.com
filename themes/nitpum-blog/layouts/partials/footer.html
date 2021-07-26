@@ -1,4 +1,21 @@
 <footer id="footer">
+  <div class="footer-social">
+		{{ if .Site.Params.Social.Twitter }}
+			<a href="https://twitter.com/{{ .Site.Params.Social.Twitter }}" alt="Twitter">
+				{{ partial "svgs/twitter.svg" }} 
+			</a>
+		{{ end }}
+		{{ if .Site.Params.Social.Github }}
+			<a href="https://github.com/{{ .Site.Params.Social.Github }}" alt="Github">
+				{{ partial "svgs/github.svg" }} 
+			</a>
+		{{ end }}
+		{{ if .Site.Params.Social.Gitlab }}
+			<a href="https://gitlab.com/{{ .Site.Params.Social.Gitlab }}" alt="Gitlab">
+				{{ partial "svgs/gitlab.svg" }} 
+			</a>
+		{{ end }}
+  </div>
   <span
     >&copy; {{ .Site.Params.Copyright | default "Copyright" }} {{ now.Year }}
     {{ .Site.Title }}</span
