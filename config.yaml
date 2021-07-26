@@ -8,13 +8,30 @@ params:
   description: nitpum blog
   copyright: Copyright
   Logo:
-    Permalink: /logo-64x64.png
+    Permalink: /logo-96x96.jpg
   defaultTheme: auto
   assets:
     safari_pinned_tab: apple-touch-icon.png
+  default-cover: blog-cover.jpg
+  social:
+    twitter: nitpum
+    gitlab: nitpum
+    github: nitpum
 
 permalinks:
   post: /:year/:month/:filename/
+
+related:
+  includeNewer: true
+  indices:
+    - name: tags
+      weight: 80
+    - name: keywords
+      weight: 100
+    - name: date
+      weight: 10
+  threshold: 80
+  toLower: true
 
 markup:
   highlight:
