@@ -54,6 +54,10 @@
         align-items: center;
         color: var(--content);
 
+				&.p-0 {
+					padding: 0;
+				}
+
         svg {
           margin-right: 4px;
         }
