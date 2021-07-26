@@ -1,17 +1,17 @@
 <footer id="footer">
   <div class="footer-social">
 		{{ if .Site.Params.Social.Twitter }}
-			<a href="https://twitter.com/{{ .Site.Params.Social.Twitter }}" alt="Twitter">
+			<a href="https://twitter.com/{{ .Site.Params.Social.Twitter }}" alt="Twitter" rel="noopener">
 				{{ partial "svgs/twitter.svg" }} 
 			</a>
 		{{ end }}
 		{{ if .Site.Params.Social.Github }}
-			<a href="https://github.com/{{ .Site.Params.Social.Github }}" alt="Github">
+			<a href="https://github.com/{{ .Site.Params.Social.Github }}" alt="Github" rel="noopener">
 				{{ partial "svgs/github.svg" }} 
 			</a>
 		{{ end }}
 		{{ if .Site.Params.Social.Gitlab }}
-			<a href="https://gitlab.com/{{ .Site.Params.Social.Gitlab }}" alt="Gitlab">
+			<a href="https://gitlab.com/{{ .Site.Params.Social.Gitlab }}" alt="Gitlab" rel="noopener">
 				{{ partial "svgs/gitlab.svg" }} 
 			</a>
 		{{ end }}
