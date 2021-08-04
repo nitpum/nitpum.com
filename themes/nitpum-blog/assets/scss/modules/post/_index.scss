@@ -26,6 +26,7 @@
     }
 
     @include for-desktop-up {
+			svg,
       img {
         border-radius: var(--radius);
       }
@@ -81,4 +82,11 @@
       filter: var(--image-filter);
     }
   }
+
+}
+
+.comment {
+	margin: auto;
+	width: 100%;
+	max-width: var(--content-width);
 }

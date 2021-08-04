@@ -10,7 +10,9 @@
         {{ end }}
       {{ else }}
           <figure>
-            <img src="" alt="{{ .Title }}" />
+            <svg width="288" height="144">
+							<rect width="100%" height="100%" fill="var(--content)"  rx="8px" ry="8px" />
+						</svg>
           </figure>
       {{ end }}
       <h2 class="title">{{ .Title }}</h2>

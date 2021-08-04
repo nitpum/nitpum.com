@@ -26,6 +26,14 @@
       {{ .Content }}
     </div>
   </article>
+	<div class="share">
+		<a class="twitter-share-button" href="https://twitter.com/intent/tweet">Tweet</a>
+	</div>
+	<div class="comment">
+		<div>
+
+		</div>
+	</div>
   <div>
     {{ $related := .Site.RegularPages.Related . | first 3 }}
       {{ with $related }}

@@ -12,7 +12,7 @@ params:
   defaultTheme: auto
   assets:
     safari_pinned_tab: apple-touch-icon.png
-  default-cover: blog-cover.jpg
+  default_cover: blog-cover.jpg
   social:
     twitter: nitpum
     gitlab: nitpum
