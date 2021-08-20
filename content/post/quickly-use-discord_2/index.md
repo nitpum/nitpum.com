@@ -42,7 +42,7 @@ tags:
 2.  จะมีหน้าต่างโผล่ขึ้นมาให้กดปุ่ม Join a Server
 3.  ใส่ลิงก์เซิฟเวอร์ ที่เพื่อนให้เรามาครับ (ตัวอย่าง: discord.gg/ABCD)
 
-    {{< video src="join_a_server" autoplay="true" loop="true" muted="true" >}}
+    {{< video src="videos/join_a_server" autoplay="true" loop="true" muted="true" >}}
 
 4.  จะมี วงกลมเซิฟเวอร์ เพิ่มขึ้นมา (ไอคอนเซิฟเวอร์ของแต่ละคนจะไม่เหมือนกัน)
 
@@ -50,7 +50,7 @@ tags:
 
 1.  คลิกที่ วงกลมเซิฟเวอร์ ที่เพิ่มขึ้นมา
 2.  ดูที่ด้านซ้ายครับเลื่อนหาห้องที่มีรูปลำโพงอยู่จะเป็น Voice channel สามารถเข้าไปพูดเปิดไมค์ได้ครับ
-    ![Join discord voice channel](discord_join_voice_ch.jpg)
+    ![Join discord voice channel](images/discord_join_voice_ch.jpg)
 
 3.  กดเข้าห้องก็คุยกับเพื่อนได้แล้วครับ **พร้อมลุย !**  
     3.1 ห้องที่มีรูปลำโพงคือ Voice Channel เป็นห้องสำหรับเปิดไมค์คุยครับ  

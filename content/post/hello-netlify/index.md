@@ -23,19 +23,19 @@ tags: [blog, dev, static website, github, netlify, free]
 
 **Netlify ให้ CDN ฟรี!** ใช้ครับอ่านไม่ผิดครับ Netlify ให้เว็บเราใช้งาน CDN ได้ฟรีครับ ถ้าใครไม่รู้จัก CDN(Content Delivery Network) หรือถ้าพูดง่ายๆ ก็คือระบบเครือข่ายที่กระจายข้อมูลเว็บไปยังทั่วโลก ทำให้เว็บเราสามารถเข้าจากที่ไหนก็ได้ในโลกได้อย่างรวดเร็วนั้นเองครับ
 
-![Netlify Global CDN](01.jpg)
+![Netlify Global CDN](images/01.jpg)
 
 นอกจากนี้ยังมี **SSL(Let's Encrypt) ให้เราฟรีอีกด้วย** และเมื่อเราเปิดใช้งาน SSL จะส่งข้อมูลผ่าน **HTTP2** ทำให้เว็บเราเร็วสุดๆ ไปเลยครับ แถมยังมีระบบประวัติเวอร์ชั่นเว็บเรา ที่ให้เราย้อนเว็บกลับไปเป็นแบบเก่าได้อีกด้วย นอกจากนี้เว็บที่ใช้ **static site generator** ไม่จำเป็นต้องสั่ง build เอง แต่ให้ Netlify สั่ง build แทนและอัพขึ้นเน็ตให้ทันที
 
 ทางด้านราคาสำหรับโปรฟรีถือว่าโอเคครับ มีฟีดเจอร์พื้นฐานให้ครบถ้วน ถ้าใครอยากฟีดเจอร์อื่นๆ เพิ่ม เช่น Advance Proxy Rule กับ Prerendering ต้องเสียเงินครับ [ดูรายละเอียดเรื่องราคา](https://www.netlify.com/pricing/)
 
-![Netfliy plans](02.jpg)
+![Netfliy plans](images/02.jpg)
 
 ส่วนเรื่องขอจำกัด พวกแบรดวิด กับ ขนาดของเว็บ ก็ตามนี้เลยครับ  
 โปรฟรีได้ แบรดวิน 100GB/เดือน และขนาดเว็บสูงสุด 100GB  ถือว่าเยอะพอสมควรครับ  
 สำหรับเว็บไซต์ธรรมดาและเว็บบล็อกแค่นี้ก็เพียงพอแล้วครับ [ดูข้อมูลเต็ม](https://www.netlify.com/tos/)
 
-![Netlify Limits](03.jpg)
+![Netlify Limits](images/03.jpg)
 
 ## เริ่มใช้งาน
 
@@ -49,7 +49,7 @@ tags: [blog, dev, static website, github, netlify, free]
 
 อย่างแรกเราต้องสร้าง Repo ของเว็บเรากันก่อนครับ ในตัวอย่างนี้ผมฝากไว้กับ Github ครับ ใครจะใช้ Bitbucket หรือ Gitlab ก็ได้นะครับ สามตัวนี้ Netlify เชื่อมได้หมดครับ
 
-![Create new repo on Github](04.jpg)
+![Create new repo on Github](images/04.jpg)
 
 หลังจากนั้นก็โคลนโปรเจคเราลงมา
 
@@ -70,11 +70,11 @@ git push -u origin master
 ต่อไปเราก็จะเชื่อม Netlify เข้ากับ Repo เว็บเราครับ  
 ขั่นแรกก็ล็อคอินเข้า Netlify ตามลิงก์นี้ครับ [Login](https://app.netlify.com/)
 
-![Login Netlify](05.jpg)
+![Login Netlify](images/05.jpg)
 
 พอเข้ามาหน้า Dashboard แล้วกด "New site from git" จะเข้ามาหน้า Create a new site ครับ
 
-![New site from git](06.jpg)
+![New site from git](images/06.jpg)
 
 ในหน้านี้จะให้เราเลือกว่าจะเอา Repo จากที่ไหนซึ่งก็มี GitHub, GitLab และ Bitbucket ด้วยกันครับ  
 แน่นอนว่าตัวอย่างนี้เราเอา Repo ฝากไว้กับ Github ขั้นตอนนี้เราจึงเลือก Github ครับ
@@ -89,15 +89,15 @@ git push -u origin master
 
 เสร็จแล้วจะมีหน้าต่างยืนยันสิทธิให้ Netlify อ่าน Repo ของเราขึ้นมา กดปุ่ม "Authorize application" เลยครับ
 
-![Authorization Github](07.jpg)
+![Authorization Github](images/07.jpg)
 
 จากนั้นจะมีรายชื่อ Repo ทั้งหมดขึ้นมา กดเลือก Repo ของเว็บเราครับ
 
-![Choose repo](08.jpg)
+![Choose repo](images/08.jpg)
 
 ขั้นตอนต่อไปจะเป็นการตั้งค่าพื้นฐาน
 
-![Config deploy branch](09.jpg)
+![Config deploy branch](images/09.jpg)
 ### Branch to deploy :
 
 เลือก branch ที่เราต้อง deploy ครับ ใครที่มี branch อยู่หลายอันให้เลือกอันที่เราใช้ดีพลอยครับ  
@@ -114,12 +114,12 @@ git push -u origin master
 เสร็จแล้วเราจะมาโผล่หน้าประมาณนี้ครับ ด้านล่างจะมี log การ deploy ให้เราด้วย  
 ส่วนด้านบนจะมีลิงค์กดดูหน้าเว็บเราครับ
 
-![Deploy log](10.jpg)
+![Deploy log](images/10.jpg)
 
 และเมื่อกดเข้าลิงก์เว็บเรา... เย้ ! ตอนเว็บเราตอนนี้อยู่บน Netlify แล้วครับ  
 ต่อไปเราจะมาลองอัพเดทหน้าเว็บดูกันครับ
 
-![Result page](11.jpg)
+![Result page](images/11.jpg)
 
 ## อัพเดทหน้าเว็บ
 
@@ -135,11 +135,11 @@ git push origin master
 
 ลองกลับไปดูหน้า Deploys จะเห็นว่า Netlify ดึงคอมมิดใหม่ให้เราแล้วครับ
 
-![New deployment in deploy page](12.jpg)
+![New deployment in deploy page](images/12.jpg)
 
 ลองกดดูเว็บเราใหม่อีกที... เย้ ! หน้าเว็บเราอัพเดทแล้วครับ
 
-![Our website is updated](13.jpg)
+![Our website is updated](images/13.jpg)
 
 ## เปลี่ยนชื่อเว็บไซต์
 

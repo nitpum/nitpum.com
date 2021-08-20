@@ -21,30 +21,30 @@ tags:
 ## วิธีติดตั้งตัวเกม Public Test Build
 
 1.  คลิกขวาเกม Dead by Daylight แล้วกด Properties (ภาษาไทยคือ คุณสมบัติ)
-    {{< video src="01" autoplay="true" loop="true" muted="true" >}}
+    {{< video src="videos/01" autoplay="true" loop="true" muted="true" >}}
 
 2.  กดไปที่แท็บ "Betas" หรือ "เบต้า"
 
-    {{< video src="02" autoplay="true" loop="true" muted="true" >}}
+    {{< video src="videos/02" autoplay="true" loop="true" muted="true" >}}
 
 3.  3.1 พิมพ์โค๊ดในช่องว่างว่า `DbdPublicTest`  
     3.2 กด Check Code
 
     3.3 กดที่ NONE เปลี่ยนเป็น public-beta
-    {{< video src="03" autoplay="true" loop="true" muted="true" >}}
+    {{< video src="videos/03" autoplay="true" loop="true" muted="true" >}}
 
 4.  จากนั้นรอตัวเกมโหลดตัวเกม Public Test Build ลง เพียงเท่านี้เราก็เล่นแพตช์ Public Test Build ได้แล้ว
 
-    {{< figure src="downloading-update.jpg" alt="ดาวน์โหลดอัพเดท">}}
+    {{< figure src="images/downloading-update.jpg" alt="ดาวน์โหลดอัพเดท">}}
 
 ## วิธีถอดการติดตั้ง Public Test Build กลับไปตัวเกมปกติ
 
 1.  ทำแบบเดียวกับตอนติดตั้งตัวเกม Public Test เลยครับ เพียงแต่ในแท็บ Betas เปลี่ยนจาก public-beta เป็น NONE แค่นั้นเอง
 
-    {{< video src="back-to-normal-build" autoplay="true" loop="true" muted="true" >}}
+    {{< video src="videos/back-to-normal-build" autoplay="true" loop="true" muted="true" >}}
 
 2.  จากนั้นรอโหลดตัวเกมปกติมาใหม่ก็กลับมาเล่นตัวเกมปกติได้แล้วครับ
 
-    {{< figure src="downloading-update.jpg" alt="ดาวน์โหลดอัพเดท">}}
+    {{< figure src="images/downloading-update.jpg" alt="ดาวน์โหลดอัพเดท">}}
 
 จบแล้วครับสำหรับวิธีการเล่น Public Test เพียงเท่านี้เวลามีคอนเท็นใหม่หรืออัพเดทใหม่ที่กำลังจะมา เช่น ตัวละครใหม่, แมพใหม่ หรือ ไอเทมใหม่อะไรพวกนี้เราก็จะได้เล่นก่อนใครเลย
