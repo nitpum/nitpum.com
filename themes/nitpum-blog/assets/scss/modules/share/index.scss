@@ -1,4 +1,10 @@
 .share {
 	margin: auto;
 	max-width: var(--content-inner-width);
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.fb-share-button {
+	display: inline-flex !important;
 }

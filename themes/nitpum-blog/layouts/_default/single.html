@@ -21,24 +21,27 @@
         </p>
       </div>
     </header>
+		{{ partial "share.html" . }}
     <div class="content">
       {{ partial "table_of_content" . }}
       {{ .Content }}
     </div>
   </article>
 	<section class="support">
-		{{ partial "kofi.html" . }}
+		{{ partial "social/kofi.html" . }}
 	</section>
-	<section class="share">
-		
-		</div>
-		<a class="twitter-share-button" href="https://twitter.com/intent/tweet">Tweet</a>
-	</section>
-	<section class="comment">
-		<div>
 
-		</div>
+	{{ partial "share.html" . }}
+
+	<section class="comment">
+			<div class="fb-comments" 
+				data-href="{{ .Permalink }}" 
+				data-width="100%" 
+				data-colorscheme="dark" 
+				data-lazy="true">
+			</div>
 	</section>
+
   <section>
     {{ $related := .Site.RegularPages.Related . | first 3 }}
       {{ with $related }}

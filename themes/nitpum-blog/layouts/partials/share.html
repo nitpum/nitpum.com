@@ -1,0 +1,14 @@
+<section class="share">
+	{{ if eq .Site.Params.Share.Facebook true }}
+		<div class="fb-share-button" 
+		data-href="{{ .Permalink }}" 
+		data-layout="button_count"
+		data-size="large"
+		>
+		Share
+		</div>
+	{{ end }}
+	{{ if eq .Site.Params.Share.Twitter true }}
+		<a class="twitter-share-button" href="https://twitter.com/intent/tweet" data-size="large">Tweet</a>
+	{{ end }}
+</section>

@@ -1,24 +1,25 @@
 *,
 body {
-  font-family: "Sarabun", "Roboto", "sans-serif";
-  line-height: 1.8rem;
-  outline-color: var(--primary);
+	font-family: "Sarabun", "Roboto", "sans-serif";
+	line-height: 1.8rem;
+	outline-color: var(--primary);
+	box-sizing: border-box;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: var(--bg);
-  color: var(--content);
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: var(--bg);
+	color: var(--content);
 }
 
 main {
-  flex: 1;
+	flex: 1;
 }
 
 a {
-  color: var(--primary);
+	color: var(--primary);
 }
 
 // h1 {
@@ -40,8 +41,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--heading);
-  margin-top: 2em;
+	color: var(--heading);
+	margin-top: 2em;
 }
 
 // FIXME: Don't know why it not works
@@ -55,24 +56,25 @@ h6 {
 // }
 
 table {
-  max-width: 100%;
-  
-  th, td {
-    padding: 16px;
-    border-bottom: 1px solid var(--fg);
-  }
-  
-  th {
-    border-bottom: 2px solid var(--fg);
-  }
+	max-width: 100%;
+
+	th,
+	td {
+		padding: 16px;
+		border-bottom: 1px solid var(--fg);
+	}
+
+	th {
+		border-bottom: 2px solid var(--fg);
+	}
 }
 
 .text-primary {
-  color: var(--primary);
+	color: var(--primary);
 }
 
 .container {
-  margin: auto;
-  width: 100%;
-  max-width: $container;
+	margin: auto;
+	width: 100%;
+	max-width: $container;
 }
