@@ -7,17 +7,22 @@ enableRobotsTXT: true
 params:
   description: nitpum blog
   copyright: Copyright
-  Logo:
+  logo:
     Permalink: /logo-96x96.jpg
   defaultTheme: auto
   assets:
     safari_pinned_tab: apple-touch-icon.png
   default_cover: blog-cover.jpg
+  share:
+    facebook: true
+    twitter: true
   social:
     twitter: nitpum
     gitlab: nitpum
     github: nitpum
+    kofi: nitpum
 
+paginate: 10
 permalinks:
   post: /:year/:month/:filename/
 
