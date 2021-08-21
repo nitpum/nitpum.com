@@ -1,4 +1,7 @@
 {{- $src := .Get "src" -}}
+{{ $autoPlay := .Get "autoplay" }}
+{{ $loop := .Get "loop" }}
+
 {{- $mp4 := "" -}}
 {{ $webm := ""}}
 {{ $ogg := "" }}
@@ -21,7 +24,7 @@
 {{- end -}}
 
 
-<video preload="auto" {{ if eq (.Get "controls") "true"}}controls{{ end }} {{ if eq (.Get "autoplay") "true"}}autoplay{{ end }} {{ if eq (.Get "loop") "true"}}loop{{ end }} {{ if eq (.Get "muted") "true" }}muted {{ end }} width="{{ .Get "width" | default "100%" }}" {{ with $poster }}poster="{{ .RelPermalink }}" {{ end }}>
+<video preload="auto" {{ if eq (.Get "controls") "true"}}controls{{ end }} {{ if not (eq $autoPlay "false")}}autoplay{{ end }} {{ if not (eq $loop "false")}}loop{{ end }} {{ if not (eq (.Get "muted") "false") }}muted {{ end }} width="{{ .Get "width" | default "100%" }}" {{ with $poster }}poster="{{ .RelPermalink }}" {{ end }}>
   {{- with $mp4 -}}
     <source src="{{ .RelPermalink }}" type="video/mp4">
 	{{ end }}
