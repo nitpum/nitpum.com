@@ -17,6 +17,7 @@ params:
     facebook: true
     twitter: true
   social:
+    facebook: nitpum
     twitter: nitpum
     gitlab: nitpum
     github: nitpum

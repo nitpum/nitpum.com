@@ -3,6 +3,11 @@
 		{{ partial "social/kofi.html" . }}
 	</div>
   <div class="footer-social">
+		{{ if .Site.Params.Social.Facebook }}
+			<a href="https://facebook.com/{{ .Site.Params.Social.Facebook }}" alt="Facebook" rel="noopener">
+				{{ partial "svgs/facebook.svg" }} 
+			</a>
+		{{ end }}
 		{{ if .Site.Params.Social.Twitter }}
 			<a href="https://twitter.com/{{ .Site.Params.Social.Twitter }}" alt="Twitter" rel="noopener">
 				{{ partial "svgs/twitter.svg" }} 
