@@ -23,7 +23,7 @@ params:
     github: nitpum
     kofi: nitpum
 
-paginate: 10
+paginate: 9
 permalinks:
   post: /:year/:month/:filename/
 

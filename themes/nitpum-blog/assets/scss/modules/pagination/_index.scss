@@ -1,0 +1,35 @@
+.pagination {
+	display: flex;
+	margin: auto;
+	width: fit-content;
+	max-width: var(--content-width);
+	list-style: none;
+	padding: 0;
+	margin-top: 16px;
+
+	li {
+		padding: 0;
+
+		&.active {
+			a {
+				color: var(--primary);
+			}
+		}
+
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 40px;
+			height: 40px;
+			text-decoration: none;
+			color: var(--content);
+
+			&:hover,
+			&focus {
+				border-radius: var(--radius);
+				background-color: var(--fg);
+			}
+		}
+	}
+}
