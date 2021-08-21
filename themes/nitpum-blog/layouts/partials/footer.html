@@ -1,4 +1,7 @@
 <footer id="footer">
+	<div class="footer-support">
+		{{ partial "kofi.html" . }}
+	</div>
   <div class="footer-social">
 		{{ if .Site.Params.Social.Twitter }}
 			<a href="https://twitter.com/{{ .Site.Params.Social.Twitter }}" alt="Twitter" rel="noopener">

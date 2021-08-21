@@ -26,15 +26,20 @@
       {{ .Content }}
     </div>
   </article>
-	<div class="share">
+	<section class="support">
+		{{ partial "kofi.html" . }}
+	</section>
+	<section class="share">
+		
+		</div>
 		<a class="twitter-share-button" href="https://twitter.com/intent/tweet">Tweet</a>
-	</div>
-	<div class="comment">
+	</section>
+	<section class="comment">
 		<div>
 
 		</div>
-	</div>
-  <div>
+	</section>
+  <section>
     {{ $related := .Site.RegularPages.Related . | first 3 }}
       {{ with $related }}
         <div class="post-list">
@@ -43,5 +48,5 @@
           {{ end }}
         </div>
     {{ end }}
-  </div>
+  </section>
 {{ end }}
