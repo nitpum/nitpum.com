@@ -30,7 +30,7 @@ tags:
 
 1. กดเข้าไปโหลดโปรแกรมตามลิงค์ http://www.skinspotlights.com/p/skinspotlights-replays.html เมื่อกดเข้าไปในลิงค์ ให้เลื่อนลงมาข้างล่างจะเจอลิงค์ดาวน์โหลดโปรแกรมเวอร์ชั่นต่างๆ
 
-![How to download](images/01-download-link.gif)
+{{< video src="01-download-link" >}}
 
 2. กดเลือกโหลดเวอร์ชั่นใหม่ ดู Patch ให้ตรงกับเกมของเราด้วยนะครับ
 
@@ -53,7 +53,7 @@ tags:
    ต่อด้วยติ๊กถูกที่ช่อง Run the program as an adminstrator
    แล้วกด OK
 
-![Run as a adminstrator](images/set-adminstrator.gif)
+{{< video src="set-adminstrator" autoplay="false" loop="false" muted="true" >}}
 
 4. เมื่อเรากดเข้าโปรแกรมจะมีให้ยืนยัน Adminstrator กด Yes ไปเลยครับ
 5. ไปที่แท็บ Options และตั้งค่าโดยมีรายละเอียดดังนี้ครับ
@@ -74,7 +74,7 @@ tags:
 จากนั้นเลือก League of Legends.exe แล้วกด Open\*\* หากไม่เห็นไฟลล์ League of Legends.exe
 ให้กดเปลี่ยนสกุลไฟลล์จาก LoL Launcher.exe ไปเป็น Any EXE ดูตามภาพข้างล่างนี้นะครับ
 
-![Choose LoL Launcher.exe](images/find-lol.gif)
+{{< video src="find-lol" autoplay="true" loop="true" muted="true" >}}
 
 **หมายเลข 2 Replay Path** ให้เราเลือกโฟลเดอร์ที่เราต้องการจะเก็บไฟลล์รีเพลย์ไว้ครับ
 
