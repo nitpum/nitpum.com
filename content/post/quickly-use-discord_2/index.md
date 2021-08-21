@@ -42,7 +42,7 @@ tags:
 2.  จะมีหน้าต่างโผล่ขึ้นมาให้กดปุ่ม Join a Server
 3.  ใส่ลิงก์เซิฟเวอร์ ที่เพื่อนให้เรามาครับ (ตัวอย่าง: discord.gg/ABCD)
 
-    {{< video src="videos/join_a_server" autoplay="true" loop="true" muted="true" >}}
+    {{< video src="join_a_server" autoplay="true" loop="true" muted="true" >}}
 
 4.  จะมี วงกลมเซิฟเวอร์ เพิ่มขึ้นมา (ไอคอนเซิฟเวอร์ของแต่ละคนจะไม่เหมือนกัน)
 
