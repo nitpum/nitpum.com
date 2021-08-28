@@ -8,9 +8,11 @@
 	--content-inner-width: 700px;
 	--code-text: #f8f8f2;
 	--code-bg: #272822;
+	--border-size: 1px;
+	--border-color: #e3e7e9; // rgb(51, 55, 57)
 	--radius: 12px;
 	--shadow: -6px 8px 10px rgba(81, 41, 10, 0.1),
-		0px 2px 2px rgba(81, 41, 10, 0.2);
+	0px 2px 2px rgba(81, 41, 10, 0.2);
 	--image-filter: none;
 }
 
@@ -22,5 +24,6 @@
 	--content: rgba(255, 255, 255, 0.87);
 	--code-text: #272822;
 	--code-bg: #f8f8f8;
+	--border-color: #4f4749; // rgb(51, 55, 57)
 	--image-filter: brightness(0.8) contrast(1.2);
 }

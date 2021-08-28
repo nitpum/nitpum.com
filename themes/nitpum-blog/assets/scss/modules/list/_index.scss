@@ -15,6 +15,7 @@
     border-radius: var(--radius);
     text-decoration: none;
     color: var(--content);
+		border: 1px solid transparent;
 
     @media (max-width: 475px) {
       max-width: 100%;
@@ -22,6 +23,7 @@
 
     &:hover,
     &:focus {
+			border: var(--border-size) solid var(--border-color);
       background-color: var(--fg);
     }
 
@@ -41,10 +43,12 @@
       font-size: 18px;
       flex: 1;
       color: var(--heading);
+			padding: 0px 8px;
     }
 
     p {
       margin: 0;
+			padding: 0px 8px;
     }
   }
 }
