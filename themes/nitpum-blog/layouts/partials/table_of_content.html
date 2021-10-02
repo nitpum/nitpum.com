@@ -1,4 +1,4 @@
-{{ if and (gt (len .TableOfContents) 80) (ne .Params.disableToc true) }}
+{{ if and (gt (len .TableOfContents) 80) (ne .Params.toc false) }}
   <div class="toc">
     <details open>
       <summary accesskey="c" title="(Alt +C)">

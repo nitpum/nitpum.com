@@ -4,7 +4,7 @@ date: 2017-06-29T12:30:00.004+07:00
 draft: false
 aliases: [ "/2017/06/lol-out-of-range-blackscreen.html" ]
 tags : [blog, game, แก้ปัญหา, เกม, how-to, league of legends, lol]
-disableToc: true
+toc: false
 ---
   
 ปัญหานี้แก้ด้วยการปรับหน้าจอเกมออกจากโหมดเต็มหน้าจอ(Full screen) เป็นโหมด Borderless หรือ โหมด Window โดยวิธีการก็ทำได้ดังนี้  

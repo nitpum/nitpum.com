@@ -4,7 +4,7 @@ date: 2017-06-17T20:11:00.004+07:00
 draft: false
 aliases: [ "/2017/06/discord-installaion-has-failed.html" ]
 tags : [blog, วิธีการ, game, แก้ปัญหา, article, discord, how-to, ติดตั้งโปรแกรม]
-disableToc: true
+toc: false
 ---
   
 สวัสดีครับบทความนี้จะมาบอก**วิธีแก้ปัญหา** สำหรับใครที่ติดตั้ง Discord แล้วพบปัญหา **Installation has failed**  เพื่อนผมพึง Reset this PC เพื่อล้างคอมลง Windows ใหม่แล้วเจอปัญหานี้ก็เลยแชร์วิธีการแก้เผื่อมีประโยชน์กับคนที่ติดปัญหานี้เหมือนกัน  

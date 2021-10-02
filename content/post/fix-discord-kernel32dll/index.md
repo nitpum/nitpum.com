@@ -4,7 +4,7 @@ date: 2017-10-27T23:47:00.002+07:00
 draft: false
 aliases: ["/2017/10/fix-discord-kernel32dll.html"]
 tags: [blog, วิธีการ, แก้ปัญหา, article, discord, How To, ติดตั้งโปรแกรม]
-disableToc: true
+toc: false
 ---
 
 ## สาเหตุ
