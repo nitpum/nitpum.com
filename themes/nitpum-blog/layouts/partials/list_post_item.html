@@ -1,20 +1,17 @@
 <a  class="post-card" href="{{ .Permalink }}" aria-label="{{ .Title }}">
   <article>
-    <header>
-			{{ with .Resources.GetMatch "cover.*" }}
-        {{ $cover := . }}
-        {{ with $cover.Fill "288x144 center" }}
-          <figure>
-            <img src="{{ .Permalink }}" alt="{{ .Title }}" width="{{ .Width }}" height="{{ .Height }}" />
-          </figure>
-        {{ end }}
-      {{ else }}
+		{{ with .Resources.GetMatch "cover.*" }}
+			{{ $cover := . }}
+			{{ with $cover.Fill "288x144 center" }}
 				<figure>
-					<img src="http://localhost:3000/api/post?title={{ .Title }}&name=nitpum&logo=https%3A%2F%2Fassets.nitpum.com%2Fimg%2Ficon%2Fnitpum%2F310x310.png&width=288&height=144" alt="{{ .Title }}" width="288" height="144" />
+					<img src="{{ .Permalink }}" alt="{{ .Title }}" width="{{ .Width }}" height="{{ .Height }}" />
 				</figure>
-      {{ end }}
-      <h2 class="title">{{ .Title }}</h2>
-    </header>
+			{{ end }}
+		{{ else }}
+			<figure>
+				<img src="http://localhost:3000/api/post?title={{ .Title }}&name=nitpum&logo=https%3A%2F%2Fassets.nitpum.com%2Fimg%2Ficon%2Fnitpum%2F310x310.png&width=288&height=144" alt="{{ .Title }}" width="288" height="144" />
+			</figure>
+		{{ end }}
     {{ if .IsPage }}
       <p>
         <time datetime="{{ dateFormat "2006-01-02" .Date }}">
@@ -23,5 +20,6 @@
         &bull; {{ .ReadingTime }} min
       </p>
     {{ end }}
+		<h2 class="title">{{ .Title }}</h2>
   </article>
 </a>
