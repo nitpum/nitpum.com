@@ -1,3 +1,4 @@
 {
-  "prettier.resolveGlobalModules": true
+	"prettier.resolveGlobalModules": true,
+	"frontMatter.preview.host": "http://localhost:1313"
 }

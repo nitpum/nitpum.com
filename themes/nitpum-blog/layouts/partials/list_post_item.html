@@ -1,7 +1,7 @@
 <a  class="post-card" href="{{ .Permalink }}" aria-label="{{ .Title }}">
   <article>
     <header>
-      {{ with .Resources.GetMatch "cover.*" }}
+			{{ with .Resources.GetMatch "cover.*" }}
         {{ $cover := . }}
         {{ with $cover.Fill "288x144 center" }}
           <figure>
@@ -9,11 +9,9 @@
           </figure>
         {{ end }}
       {{ else }}
-          <figure>
-            <svg width="288" height="144">
-							<rect width="100%" height="100%" fill="var(--content)"  rx="8px" ry="8px" />
-						</svg>
-          </figure>
+				<figure>
+					<img src="http://localhost:3000/api/post?title={{ .Title }}&name=nitpum&logo=https%3A%2F%2Fassets.nitpum.com%2Fimg%2Ficon%2Fnitpum%2F310x310.png&width=288&height=144" alt="{{ .Title }}" width="288" height="144" />
+				</figure>
       {{ end }}
       <h2 class="title">{{ .Title }}</h2>
     </header>
