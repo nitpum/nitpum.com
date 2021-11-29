@@ -1,8 +1,14 @@
 .share {
+	display: flex;
+	align-items: center;
 	margin: auto;
 	max-width: var(--content-inner-width);
 	padding-left: 10px;
 	padding-right: 10px;
+
+	> * {
+		margin-right: 4px;
+	}
 }
 
 .fb-share-button {
