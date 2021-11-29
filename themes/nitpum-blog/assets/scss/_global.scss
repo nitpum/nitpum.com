@@ -1,9 +1,10 @@
 *,
 body {
 	font-family: "Sarabun", "Roboto", "sans-serif";
-	line-height: 1.8rem;
+	line-height: 1.8;
 	outline-color: var(--primary);
 	box-sizing: border-box;
+	font-size: 18px;
 }
 
 body {
@@ -20,6 +21,8 @@ main {
 
 a {
 	color: var(--primary);
+	text-decoration-color: var(--link-underline-color);
+	text-decoration-thickness: 0.125rem;
 }
 
 // h1 {
@@ -44,6 +47,32 @@ h6 {
 	color: var(--heading);
 	margin-top: 2em;
 }
+
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
 
 // FIXME: Don't know why it not works
 // :not(div.highlight) {
