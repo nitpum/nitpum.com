@@ -7,15 +7,15 @@
         document.body.classList.add("dark");
       }
     </script>
-    {{- /*  theme is dark  */}}
-    {{- else if (eq .Site.Params.defaultTheme "dark") }}
+	{{- /*  theme is dark  */}}
+	{{- else if (eq .Site.Params.defaultTheme "dark") }}
     <script>
       if (localStorage.getItem("pref-theme") === "light") {
         document.body.classList.remove("dark");
       }
     </script>
-    {{- else }}
-    {{- /*  theme is auto  */}}
+	{{- else }}
+	{{- /*  theme is auto  */}}
     <script>
       if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add("dark");
@@ -67,9 +67,7 @@
         </li>
       {{ end }}
       <li>
-        <a href="#" class="p-0">
-          {{ partial "theme_toggle.html" . }}
-        </a>
+				{{ partial "theme_toggle.html" . }}
       </li>
     </ul>
   </div>
