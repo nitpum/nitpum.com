@@ -16,6 +16,7 @@
     text-decoration: none;
     color: var(--content);
 		border: 1px solid transparent;
+		position: relative;
 
     @media (max-width: 475px) {
       max-width: 100%;
@@ -23,9 +24,25 @@
 
     &:hover,
     &:focus {
-			border: var(--border-size) solid var(--border-color);
-      background-color: var(--fg);
+      &::before {
+				transform: scale(1);
+			}
     }
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			border-radius: var(--radius);
+			background-color: var(--fg);
+			border: var(--border-size) solid var(--border-color);
+			transform: scale(0);
+			transition: transform var(--transform-time);
+		}
 
     figure {
       margin: 0;

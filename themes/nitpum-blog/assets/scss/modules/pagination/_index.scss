@@ -51,7 +51,7 @@
 				background-color: var(--fg);
 				border-radius: var(--radius);
 				transform: scale(0);
-				transition: transform 0.2s;
+				transition: transform var(--transform-time);
 			}
 		}
 	}
