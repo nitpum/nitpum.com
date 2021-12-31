@@ -8,9 +8,11 @@
 				</figure>
 			{{ end }}
 		{{ else }}
-			<figure>
-				<img src="http://localhost:3000/api/post?title={{ .Title }}&name=nitpum&logo=https%3A%2F%2Fassets.nitpum.com%2Fimg%2Ficon%2Fnitpum%2F310x310.png&width=288&height=144" alt="{{ .Title }}" width="288" height="144" />
-			</figure>
+				{{ if .Site.Params.DynamicOgEndpoint }}
+					<figure>
+						<img src="{{ .Site.Params.DynamicOgEndpoint }}?title={{ .Title }}&name=nitpum&logo=https%3A%2F%2Fassets.nitpum.com%2Fimg%2Ficon%2Fnitpum%2F310x310.png&width=288&height=144" alt="{{ .Title }}" width="288" height="144" />
+					</figure>
+				{{ end}}
 		{{ end }}
     {{ if .IsPage }}
       <p>
