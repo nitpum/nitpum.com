@@ -7,8 +7,20 @@ code {
 
 .highlight {
 	border: var(--border-size) solid var(--border-color);
+	border-radius: var(--radius);
+	overflow: hidden;
+	margin-bottom: 20px;
 
 	code {
 		--border-color: transparent;
 	}
+	
+	*,
+	code {
+		font-family: var(--code-font-family);
+		font-size: var(--code-font-size);
+		padding: 0;
+		background-color: transparent;
+	}
+	
 }

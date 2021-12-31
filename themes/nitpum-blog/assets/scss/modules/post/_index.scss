@@ -1,19 +1,8 @@
-@import "variables";
-
 .post-single {
   margin: auto;
   width: 100%;
-  max-width: $article_width;
+  max-width: var(--content-width);
   padding-bottom: 50px;
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: $typo-heading;
-  }
 
   header {
     
@@ -60,10 +49,10 @@
   .heading {
     margin: auto;
     width: 100%;
-    padding-left: $article_side_padding;
-    padding-right: $article_side_padding;
     box-sizing: border-box;
-    max-width: $article_body_width;
+    padding-left: var(--content-side-padding);
+    padding-right: var(--content-side-padding);
+    max-width: var(--content-inner-width);
     margin-bottom: 28px;
 
     h1 {
@@ -74,10 +63,10 @@
   .content {
     margin: auto;
     width: 100%;
-    padding-left: $article_side_padding;
-    padding-right: $article_side_padding;
+    padding-left: var(--content-side-padding);
+    padding-right: var(--content-side-padding);
     box-sizing: border-box;
-    max-width: $article_body_width;
+    max-width: var(--content-inner-width);
     word-wrap: break-word;
 
     img {

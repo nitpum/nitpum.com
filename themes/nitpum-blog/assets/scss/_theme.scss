@@ -3,20 +3,26 @@
 	--fg: #fff;
 	--primary: #2e8540; // #35a65e
 	--heading: #0a0b0c;
+	--font-size: 18px;
 	--link-underline-color: rgba(53, 166, 94, 0.4);
-	--content: rgba(0, 0, 0, 0.88);
-	--content-width: 960px;
-	--content-inner-width: 720px;
-	--code-text: #f8f8f2;
-	--code-bg: #272822;
 	--border-size: 1px;
 	--border-color: #eee;
+	--border-default: var(--border-size) solid var(--border-color);
 	--radius: 12px;
 	--shadow: -6px 8px 10px rgba(56, 30, 11, 0.1),
 	0px 2px 2px rgba(81, 41, 10, 0.2);
 	--image-filter: none;
-	--font-size: 18px;
 	--transform-time: 0.2s;
+
+	--content: rgba(0, 0, 0, 0.88);
+	--content-width: 960px;
+	--content-inner-width: 700px;
+	--content-side-padding: 16px;
+
+	--code-font-family: "Fira Code", "Sarabun", "Roboto", "sans-serif";
+	--code-font-size: 14px;
+	--code-text: #f8f8f2;
+	--code-bg: #272822;
 }
 
 .dark {
