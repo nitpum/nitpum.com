@@ -57,7 +57,26 @@ tags: [blog, dev, static website, github, netlify, free]
 git clone https://www.github.com/username/hello-netlify
 ```
 
-แล้วก็สร้าง index.html กันครับเสร็จแล้วก็ commit และ push เลยครับ
+แล้วก็สร้าง index.html กันครับ
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello Netlify !</title>
+        <style>
+            *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box}body,html{height:100%}body{background:#f4f6f6;font-family:Roboto,sans-serif;color:#414546;display:flex;align-items:center;justify-content:center}p{margin:20px 0}.panel{background:#eee;padding:40px 60px;border-radius:6px;width:40em;margin:50px auto;max-width:100%}a,a:active,a:link,a:visited{color:#35a65e;text-decoration:none}a:hover{text-decoration:underline}
+        </style>
+    </head>
+    <body>
+        <div class="panel">
+            <h1>Nothing here !</h1>
+        </div>
+    </body>
+</html>
+```
+
+เสร็จแล้วก็ commit และ push เลยครับ
 
 ```bash
 git add "index.html"
@@ -98,7 +117,7 @@ git push -u origin master
 ขั้นตอนต่อไปจะเป็นการตั้งค่าพื้นฐาน
 
 ![Config deploy branch](images/09.jpg)
-### Branch to deploy :
+### Branch to deploy
 
 เลือก branch ที่เราต้อง deploy ครับ ใครที่มี branch อยู่หลายอันให้เลือกอันที่เราใช้ดีพลอยครับ  
 (ตรงนี้เหมาะมากสำหรับ static site generator ครับ เช่น มี branch เก็บซอสโค้ด กับ branch ที่ใช้ดีพลอยแยกกัน)  
@@ -125,6 +144,13 @@ git push -u origin master
 
 หลังจากเว็บเราอยู่บน Netlify แล้ว ทีนี้ผมจะมาลองเปลี่ยนข้อความหน้าเว็บดูกันนะครับ  
 ผมจะเปลี่ยนข้อความตรง panel ใหม่ครับ
+
+```html
+<div class="panel">
+    <h1>Hello Netlify | nitpum</h1>
+    <a href="https://nitpum.com">← Back to main site</a>
+</div>
+```
 
 เสร็จแล้วก็ commit และ push ครับ  
 ```bash

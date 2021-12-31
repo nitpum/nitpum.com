@@ -12,16 +12,17 @@ toc: false
 วิธีแก้
 -------
 
-**วิธีที่ 1 :** กดปุ่ม **Alt + Enter** ในขณะที่จอดำ เพื่อให้ตัวเกมออกจากโหมดเต็มจอ(Full screen)  
+**วิธีที่ 1 :** กดปุ่ม `Alt` + `Enter` ในขณะที่จอดำ เพื่อให้ตัวเกมออกจากโหมดเต็มจอ(Full screen)  
 **วิธีที่ 2 :** หากวิธีที่ 1 ไม่ได้ผลให้ให้ทำตามดังต่อไปนี้  
 
   
 
 1.  เข้าไปในโฟลเดอร์เกม League of Legends ที่ติดตั้งไว้  
-    โดยปกติแล้วจะอยู่ที่ **C:/Program Files (x86)/GarenaLoLTH/**
-2.  จากนั้นเข้าไปที่ **/Apps/LoLTH/Game/Config**
-3.  เปิดไฟล์ **game.cfg** ด้วย Notepad
-4.  ค้นหาคำว่า **WindowMode**
-5.  ให้แก้จาก **WindowMode=0** เป็น **WindowMode=2** ดังรูป ![Set window mode to 2](images/WindowMode2.jpg)
+    โดยปกติแล้วจะอยู่ที่ `C:/Program Files (x86)/GarenaLoLTH/`
+2.  จากนั้นเข้าไปที่ `/Apps/LoLTH/Game/Config`
+3.  เปิดไฟล์ `game.cfg` ด้วย Notepad
+4.  ค้นหาคำว่า `WindowMode`
+5.  ให้แก้จาก `WindowMode=0` เป็น `WindowMode=2` ดังรูป 
+	![Set window mode to 2](images/WindowMode2.jpg)
 6.  จากนั้น **save** และ **เปิดเกมใหม่** ก็เรียบร้อยแล้วครับ  
     แต่อย่าลืมไปลองทดสอบดูก่อนนะครับ :)
