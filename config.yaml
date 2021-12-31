@@ -1,4 +1,4 @@
-baseURL: https://blog.nitpum.com/
+baseURL: https://nitpum.com/
 languageCode: en-us
 title: nitpum
 theme: nitpum-blog
@@ -26,7 +26,7 @@ params:
 
 paginate: 9
 permalinks:
-  post: /:year/:month/:filename/
+  post: /post/:year/:month/:filename/
 
 related:
   includeNewer: true
