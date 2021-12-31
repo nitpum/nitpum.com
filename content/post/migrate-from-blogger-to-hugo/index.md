@@ -1,7 +1,7 @@
 ---
 title: "ย้ายบล็อกจาก Blogger ไป Hugo"
 date: 2021-10-02T22:01:40+07:00
-draft: false
+draft: true
 minimizeToc: true
 ---
 
