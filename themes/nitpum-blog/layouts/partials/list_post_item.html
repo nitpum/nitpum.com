@@ -1,5 +1,6 @@
 <a  class="post-card" href="{{ .Permalink }}" aria-label="{{ .Title }}">
   <article>
+		{{ if not (eq .Params.NoCover true) }}		
 		{{ with .Resources.GetMatch "cover.*" }}
 			{{ $cover := . }}
 			{{ with $cover.Fill "288x144 center" }}
@@ -8,12 +9,18 @@
 				</figure>
 			{{ end }}
 		{{ else }}
-				{{ if .Site.Params.DynamicOgEndpoint }}
-					<figure>
-						<img src="{{ .Site.Params.DynamicOgEndpoint }}?title={{ .Title }}&name=nitpum&logo=https%3A%2F%2Fassets.nitpum.com%2Fimg%2Ficon%2Fnitpum%2F310x310.png&width=288&height=144" alt="{{ .Title }}" width="288" height="144" />
-					</figure>
-				{{ end}}
-		{{ end }}
+				
+					{{ if .Params.Cover }}
+						<figure>
+							<img src="{{ .Params.Cover }}" alt="{{ .Title }}" width="288" height="144" />
+						</figure>
+					{{ else if .Site.Params.DynamicOgEndpoint }}
+						<figure>
+							<img src="{{ .Site.Params.DynamicOgEndpoint }}?title={{ .Title }}&name=nitpum&logo=https%3A%2F%2Fassets.nitpum.com%2Fimg%2Ficon%2Fnitpum%2F310x310.png&width=288&height=144" alt="{{ .Title }}" width="288" height="144" />
+						</figure>
+					{{ end}}
+			{{ end }}
+		{{ end}}
     {{ if .IsPage }}
       <p>
         <time datetime="{{ dateFormat "2006-01-02" .Date }}">
