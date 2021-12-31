@@ -8,7 +8,7 @@
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
-    max-width: $container;
+    max-width: var(--container-width);
     justify-content: space-between;
     vertical-align: middle;
   }
