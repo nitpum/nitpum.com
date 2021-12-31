@@ -9,7 +9,7 @@
   alt="{{ .Text }}"
   loading="lazy"
   {{ if not (strings.HasPrefix .Destination "http") -}}
-  {{ $img := imageConfig (printf "content/%s/%s" .Page.Dir .Destination) }}
+  {{ $img := imageConfig (printf "content/%s/%s" .Page.File.Dir .Destination) }}
   width="{{ $img.Width }}"
   height="{{ $img.Height }}"
   {{ end }}
