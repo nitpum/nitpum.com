@@ -2,7 +2,6 @@
 title: "เริ่มใช้ Discord ฉบับเร่งรีบ เพื่อนบอกให้ใช้"
 date: 2017-06-02T23:01:00.001+07:00
 languageCode: th
-aliases: ["/2017/06/quickly-use-discord_2.html"]
 tags:
   - blog
   - วิธีการ

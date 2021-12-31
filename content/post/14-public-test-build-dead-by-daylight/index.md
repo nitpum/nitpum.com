@@ -2,7 +2,6 @@
 title: "วิธีเล่นแพตช์ใหม่ Public Beta Test Dead by Daylight ก่อนใคร"
 date: 2017-02-06T19:54:00.001+07:00
 draft: false
-aliases: ["/2017/02/14-public-test-build-dead-by-daylight.html"]
 languageCode: th
 tags:
   - blog
