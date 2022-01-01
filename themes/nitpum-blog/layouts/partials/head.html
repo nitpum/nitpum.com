@@ -80,7 +80,19 @@
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
-
+{{- $cover := .Site.Params.default_cover | absURL  -}}
+{{- if .IsPage -}}
+	{{- if not (eq .Params.NoCover true) -}}		
+		{{- with .Resources.GetMatch "cover.*" -}}
+			{{- $cover = .Permalink -}}
+		{{- end -}}
+	{{- else if .Params.Cover -}}
+		{{- $cover = .Params.Cover -}}	
+	{{- end -}}
+{{- else -}}
+{{- end -}}
+<meta property="og:image" content="{{ $cover }}" />
+			
 <meta content='{{ .Site.BaseURL }}' name='twitter:domain' />
 <meta content='{{ if .Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}' name='twitter:title' />
 <meta content='summary_large_image' name='twitter:card' />
