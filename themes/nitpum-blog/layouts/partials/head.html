@@ -107,6 +107,11 @@
 {{ end }}
 <meta content='{{ .Site.Title }}' name='twitter:site' />
 
+<!-- Facebook-->
+{{ if .Site.Params.ThirdParty.Facebook.AppID }}
+<meta content='{{ .Site.Params.ThirdParty.Facebook.AppID }}' property='fb:app_id'/> 
+{{ end }}
+
 <!-- Styles-->
 <link rel="stylesheet" href="{{ $styles.Permalink }}" as="style" />
 <link

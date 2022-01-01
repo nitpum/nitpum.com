@@ -13,6 +13,9 @@ params:
   assets:
     safari_pinned_tab: apple-touch-icon.png
   default_cover: blog-cover.jpg
+  thirdparty:
+    facebook:
+      appId: 1724084221209665
   share:
     facebook: true
     twitter: true
