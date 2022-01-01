@@ -47,8 +47,8 @@ markup:
 
 menu:
   main:
-    - name: Blog
-      url: /
+    - name: Posts
+      url: /post/
       weight: 1
     - name: Tags
       url: /tags
