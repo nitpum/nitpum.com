@@ -7,7 +7,6 @@ enableRobotsTXT: true
 params:
   description: nitpum blog
   copyright: Copyright
-  dynamicOgEndpoint: https://og-image.nitpum.com/api/post
   logo:
     Permalink: /logo-96x96.jpg
   defaultTheme: auto
