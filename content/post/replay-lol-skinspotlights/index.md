@@ -2,6 +2,7 @@
 title: วิธีอัด Replay LoL ด้วย SkinSpotLights Replay
 languageCode: th
 date: 2015-11-21T17:00:00.000
+aliases: [/2015/11/replay-lol-skinspotlights-1.html]
 tags:
   - game
   - how-to
@@ -27,7 +28,7 @@ tags:
 
 ## การติดตั้ง
 
-1. กดเข้าไปโหลดโปรแกรมตามลิงค์ https://www.skinspotlights.com/p/skinspotlights-replays.html เมื่อกดเข้าไปในลิงค์ ให้เลื่อนลงมาข้างล่างจะเจอลิงค์ดาวน์โหลดโปรแกรมเวอร์ชั่นต่างๆ
+1. กดเข้าไปโหลดโปรแกรมตามลิงค์ http://www.skinspotlights.com/p/skinspotlights-replays.html เมื่อกดเข้าไปในลิงค์ ให้เลื่อนลงมาข้างล่างจะเจอลิงค์ดาวน์โหลดโปรแกรมเวอร์ชั่นต่างๆ
 
 {{< video src="01-download-link" >}}
 

@@ -2,6 +2,7 @@
 title: "มาฝาก Static Website ไว้กับ Netlify กันเถอะ"
 date: 2017-03-15T19:48:00.001+07:00
 draft: false
+aliases: ["/2017/03/hello-netlify.html"]
 tags: [blog, dev, static website, github, netlify, free]
 ---
 

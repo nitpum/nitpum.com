@@ -2,6 +2,7 @@
 title: 'LoL แก้หน้าจอ Out of Range หรือจอดำ Black screen '
 date: 2017-06-29T12:30:00.004+07:00
 draft: false
+aliases: [ "/2017/06/lol-out-of-range-blackscreen.html" ]
 tags : [blog, game, แก้ปัญหา, เกม, how-to, league of legends, lol]
 toc: false
 ---

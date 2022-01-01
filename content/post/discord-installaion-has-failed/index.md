@@ -2,6 +2,7 @@
 title: 'แก้ปัญหา Discord ลงไม่ได้ Installaion has failed'
 date: 2017-06-17T20:11:00.004+07:00
 draft: false
+aliases: [ "/2017/06/discord-installaion-has-failed.html" ]
 tags : [blog, วิธีการ, game, แก้ปัญหา, article, discord, how-to, ติดตั้งโปรแกรม]
 toc: false
 ---
