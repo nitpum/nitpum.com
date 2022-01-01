@@ -120,3 +120,11 @@ table {
 	width: 100%;
 	max-width: var(--container-width);
 }
+
+.flex {
+	display: flex;
+}
+
+.flex-column-reverse {
+	flex-direction: column-reverse;
+}
