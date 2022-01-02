@@ -2,5 +2,5 @@
 	"prettier.resolveGlobalModules": true,
 	"frontMatter.preview.host": "http://localhost:1313",
 	"markdown.preview.fontSize": 18,
-	"editor.fontSize": 16
+	"editor.fontSize": 18
 }
