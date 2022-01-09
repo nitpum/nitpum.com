@@ -60,11 +60,15 @@ Anime
 3. Death Notes
 4. ??? Where JoJO!!
 
-## Notes
+## Notice
 
-{{<update>}}
+{{< notice note >}}
+Oh is just note... that fallen from the sky.
+{{< /notice >}}
+
+{{<notice update >}}
 Looks like something has update.
-{{</update>}}
+{{</notice>}}
 
 ## Table
 

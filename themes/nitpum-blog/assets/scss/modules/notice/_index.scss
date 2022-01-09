@@ -1,0 +1,46 @@
+.notice {
+  border: 1px solid var(--notice-accent);
+  position: relative;
+  margin-top: 40px;
+  padding: 18px 18px;
+  margin-bottom: 20px;
+  color: var(--heading);
+  border-radius: var(--radius);
+  background-color: var(--notice-bg);
+	
+
+  &::before {
+		display: none;
+    position: absolute;
+    top: -20px;
+    content: "";
+    background-color: var(--notice-accent);
+    color: $white;
+    left: 4px;
+    padding: 4px 10px;
+    border-radius: var(--radius);
+		font-size: var(--notice-heading-font-size);
+		font-weight: bold;
+		text-transform: uppercase;
+  }
+
+	&.note {
+		--notice-accent: var(--notice-note-accent);
+		--notice-bg: var(--notice-note-bg);
+
+		&::before {
+			display: block;
+			content: "Note";
+		}
+	}
+
+	&.update {
+		--notice-accent: var(--notice-update-accent);
+		--notice-bg: var(--notice-update-bg);
+
+		&::before {
+			display: block;
+			content: "Update"
+		}
+	}
+}
