@@ -66,9 +66,9 @@ Anime
 Oh is just note... that fallen from the sky.
 {{< /notice >}}
 
-{{<notice update >}}
+{{< notice update >}}
 Looks like something has update.
-{{</notice>}}
+{{< /notice >}}
 
 ## Table
 
