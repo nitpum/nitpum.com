@@ -33,6 +33,16 @@
 
 	{{ partial "share.html" . }}
 
+	{{- if .Site.Params.Social.Facebook -}}
+		<div class='post-fb-page'>
+			<div class='fb-page' data-adapt-container-width='true' data-hide-cover='false' data-href='https://www.facebook.com/{{ .Site.Params.Social.Facebook }}' data-show-facepile='true' data-small-header='false'>
+				<blockquote cite='https://www.facebook.com/{{ .Site.Params.Social.Facebook }}' class='fb-xfbml-parse-ignore'>
+					<a href='https://www.facebook.com/{{ .Site.Params.Social.Facebook }}'>{{ .Site.Params.Social.Facebook }}</a>
+				</blockquote>
+			</div>
+		</div>
+	{{- end -}}
+
 	<section class="comment">
 			<div class="fb-comments" 
 				data-href="{{ .Permalink }}" 
