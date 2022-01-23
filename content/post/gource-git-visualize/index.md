@@ -1,6 +1,5 @@
 ---
 title: ทำ Git visualize ตลอด 1 ปีที่ผ่านมาด้วย Gource
-slug: gource
 author: nitpum
 date: '2022-01-23T11:55:51.362Z'
 lastmod: 2019-08-22T15:20:28.000Z
