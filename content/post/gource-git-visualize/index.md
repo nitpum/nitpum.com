@@ -82,16 +82,26 @@ gource --time-scale 4
 
 หน้าจอเล็กไปก็ปรับได้ด้วย `-<WIDTH>x<HIEGHT>`
 ```bash
-gource -1280x720
+gource -1920x1080
 ```
 
-พอรวมทุกอย่างเข้าด้วยกันก็จะได้คำสั่งประมาณนี้ครับ (จริงๆ ยังมี option ให้ปรับได้อีกเยอะ แนะนำให้ลอง[อ่านเพิ่มในวิกิ](https://github.com/acaudwell/Gource/wiki))
+หรือจะปรับเต็มจอไปเลยก็ใส่ `--fullscreen`
+```bash
+gource --fullscreen
+```
+
+
+จริงๆ ยังมี option ให้ปรับได้อีกเยอะ แนะนำให้ลอง[อ่านเพิ่มในวิกิ](https://github.com/acaudwell/Gource/wiki)
+
+สำหรับหนึ่งปีใช้แค่นี้ก็พอแล้วครับ ที่เหลือก็แค่อัดหน้าจอเราก็จะได้ visualize ตลอด 1 ปีที่ผ่านมาแล้วครับ
 
 ```bash
-gource --start-date "2021-01-01" --stop-date "2021-12-31" --disable-auto-skip --time-scale 4 -1280x720 
+gource --start-date "2021-01-01" --stop-date "2021-12-31" --time-scale 4
 ```
 
-เอาคำสั่งนี้ไปรัน ที่เหลือก็แค่อัดหน้าจอเราก็จะได้ visualize ตลอด 1 ปีที่ผ่านมาแล้วครับ
+{{< video src="one_year" >}}
+
+(อันนี้เป็นวิดีโอประกอบเฉยๆ นะครับ ผมเอาของจริงมาโชว์ให้ดูไม่ได้)
 
 
 ## โบนัส
@@ -100,6 +110,6 @@ gource --start-date "2021-01-01" --stop-date "2021-12-31" --disable-auto-skip --
 เราสามารถเอามาใช้เรนเดอร์วิดีโอออกมาเป็นไฟล์ให้เราได้เลยจะได้ไม่ต้องมาอัดหน้าจอเอง
 
 ```bash
-gource --start-date "2021-01-01" --stop-date "2021-12-31" --disable-auto-skip --time-scale 4 -1280x720 | ffmpeg -y -r 60 -f image2pipe -vcodec ppm -i - -vcodec libx264 -preset ultrafast -pix_fmt yuv420p -crf 1 -threads 0 -bf 0 gource.mp4
+gource --start-date "2021-01-01" --stop-date "2021-12-31" --time-scale 4 -1980x1080 | ffmpeg -y -r 60 -f image2pipe -vcodec ppm -i - -vcodec libx264 -preset ultrafast -pix_fmt yuv420p -crf 1 -threads 0 -bf 0 gource.mp4
 ```
 อ่าน[รายละเอียดเพิ่มเติม](https://github.com/acaudwell/Gource/wiki/Videos)
