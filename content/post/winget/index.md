@@ -12,6 +12,12 @@ tags: [winget, windows, package-manager]
 
 ## ประโยชน์ของ Winget
 
+```bash
+winget install <package>
+
+winget install Google.Chrome
+```
+
 ## ติดตั้ง
 
 สำหรับ Windows 10 จะลงได้เฉพาะเวอร์ชัน 1709 (build 16299) ขึ้นไป เช็คได้ด้วยการเปิด Run (กดปุ่ม Start + R) จากนั้นพิมพ์ `winver` แล้วกด Enter จะมีหน้าต่างบอกเวอร์ชันขึ้นมา ให้ดูตรง `version` ครับ ถ้าเป็น 1709 หรือมากกว่านั้นแสดงว่าลงได้ครับ
