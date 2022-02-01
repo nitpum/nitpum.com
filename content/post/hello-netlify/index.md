@@ -91,7 +91,7 @@ git push -u origin master
 
 ![Login Netlify](images/05.jpg)
 
-พอเข้ามาหน้า Dashboard แล้วกด "New site from git" จะเข้ามาหน้า Create a new site ครับ
+พอเข้ามาหน้า Dashboard แล้วกด "Import an exiting project" จะเข้ามาหน้า Import an existing project from a Git repository ครับ
 
 ![New site from git](images/06.jpg)
 
