@@ -9,6 +9,6 @@
 		</div>
 	{{ end }}
 	{{ if eq .Site.Params.Share.Twitter true }}
-		<a class="twitter-share-button" href="https://twitter.com/intent/tweet" data-size="large">Tweet</a>
+		{{ partial "social/tweet" . }}
 	{{ end }}
 </section>
