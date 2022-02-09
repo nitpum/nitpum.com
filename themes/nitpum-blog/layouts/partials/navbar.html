@@ -3,23 +3,23 @@
   {{- /*  theme is light  */}}
   {{- if (eq .Site.Params.defaultTheme "light") }}
     <script>
-      if (localStorage.getItem("pref-theme") === "dark") {
+      if (localStorage.getItem("theme") === "dark") {
         document.body.classList.add("dark");
       }
     </script>
 	{{- /*  theme is dark  */}}
 	{{- else if (eq .Site.Params.defaultTheme "dark") }}
     <script>
-      if (localStorage.getItem("pref-theme") === "light") {
+      if (localStorage.getItem("theme") === "light") {
         document.body.classList.remove("dark");
       }
     </script>
 	{{- else }}
 	{{- /*  theme is auto  */}}
     <script>
-      if (localStorage.getItem("pref-theme") === "dark") {
+      if (localStorage.getItem("theme") === "dark") {
         document.body.classList.add("dark");
-      } else if (localStorage.getItem("pref-theme") === "light") {
+      } else if (localStorage.getItem("theme") === "light") {
         document.body.classList.remove("dark");
       } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
         document.body.classList.add("dark");
