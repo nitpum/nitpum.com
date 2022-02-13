@@ -2,7 +2,7 @@
 title: Winget คืออะไร? พร้อมวิธีติดตั้งและใช้งาน
 slug: winget
 author: nitpum
-date: '2022-02-03T11:50:03.854Z'
+date: '2022-02-13T11:50:03.854Z'
 tags: [winget, package-manager, windows]
 ---
 
