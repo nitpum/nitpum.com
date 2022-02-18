@@ -2,7 +2,7 @@
 title: ค้นหา Winget package ผ่านเว็บง่ายๆ ด้วย Winget.run
 author: nitpum
 date: '2022-02-18T14:56:02.264Z'
-lastmod: '2022-02-18T16:46:08.845Z'
+lastmod: '2022-02-18T16:49:41.993Z'
 tags:
   - blog
   - winget
@@ -45,11 +45,11 @@ Microsoft Visual Studio Code Insiders Microsoft.VisualStudioCode.Insiders 1.65.0
 
 ![Search with prefix](images/search-prefix.png)
 
-พอกดเข้าดูหน้า package ก็จะมีคำอธิบายว่าแพ็คเกจนั้นเกี่ยวกับอะไร ถ้าอยากลงก็มีคำสั่งพร้อมให้ก็อปไปใช้ได้เลย
+พอกดเข้าดูหน้า package ก็จะมีคำอธิบายว่าแพ็คเกจนั้นเกี่ยวกับอะไร ถ้าอยากลงก็มีคำสั่งพร้อมให้ก็อปไปใช้ได้เลย จะได้ไม่ต้องมาพิมพ์คำสั่ง install เอง
 
 ![Package's detail page with description and install script](images/detail.png)
 
-ด้านข้างก็มีเวอร์ชันที่โหลดได้ให้ดูด้วย อยากลงเวอร์ชันนั้นจิ้มปุ่มก็อปด้านขวาก็จะได้คำสั่งเอามาลงได้เลย
+ด้านข้างก็มีเวอร์ชันที่โหลดได้ให้ดูด้วย อยากลงเวอร์ชันนั้นจิ้มปุ่มก็อปด้านขวาก็จะได้คำสั่งสำหรับลงเวอร์ชันนั้นมา
 
 ![Available version with copy install command](images/version-list.png)
 
