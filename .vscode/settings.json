@@ -2,5 +2,7 @@
 	"prettier.resolveGlobalModules": true,
 	"frontMatter.preview.host": "http://localhost:1313",
 	"markdown.preview.fontSize": 18,
-	"editor.fontSize": 18
+	"editor.fontSize": 18,
+	"frontMatter.content.fmHighlight": true,
+	"frontMatter.content.autoUpdateDate": true
 }
