@@ -25,7 +25,7 @@
 		{{ end }}
 		{{ if .Site.Params.Social.Webring }}
 			{{ with .Site.BaseURL }}
-			<a href="https://webring.wonderful.software#{{ trim . "https://" }}">
+			<a href="https://webring.wonderful.software#{{ trim . "https://" }}" rel="noopener">
 				{{ partial "svgs/webring.svg" }}
 			</a>
 			{{ end }}
