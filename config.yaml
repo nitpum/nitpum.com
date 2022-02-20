@@ -24,7 +24,7 @@ params:
     twitter: nitpum
     gitlab: nitpum
     github: nitpum
-    kofi: nitpum
+    # kofi: nitpum
     webring: nitpum.com
 
 paginate: 18
