@@ -25,6 +25,7 @@ params:
     gitlab: nitpum
     github: nitpum
     kofi: nitpum
+    webring: nitpum.com
 
 paginate: 18
 permalinks:

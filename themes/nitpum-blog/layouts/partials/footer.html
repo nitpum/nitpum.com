@@ -23,6 +23,13 @@
 				{{ partial "svgs/gitlab.svg" }} 
 			</a>
 		{{ end }}
+		{{ if .Site.Params.Social.Webring }}
+			{{ with .Site.BaseURL }}
+			<a href="https://webring.wonderful.software#{{ trim . "https://" }}">
+				{{ partial "svgs/webring.svg" }}
+			</a>
+			{{ end }}
+		{{ end }}
   </div>
   <span
     >&copy; {{ .Site.Params.Copyright | default "Copyright" }} {{ now.Year }}
