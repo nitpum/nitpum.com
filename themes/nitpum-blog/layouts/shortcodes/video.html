@@ -26,12 +26,12 @@
 
 <video preload="auto" {{ if eq (.Get "controls") "true"}}controls{{ end }} {{ if not (eq $autoPlay "false")}}autoplay{{ end }} {{ if not (eq $loop "false")}}loop{{ end }} {{ if not (eq (.Get "muted") "false") }}muted {{ end }} width="{{ .Get "width" | default "100%" }}" {{ with $poster }}poster="{{ .RelPermalink }}" {{ end }}>
   {{- with $mp4 -}}
-    <source src="{{ .RelPermalink }}" type="video/mp4">
+    <source src="{{ .Permalink }}" type="video/mp4">
 	{{ end }}
 	{{ with $webm }}
-		<source src="{{ .RelPermalink }}" type="video/webm">
+		<source src="{{ .Permalink }}" type="video/webm">
 	{{ end }}
 	{{ with $ogg }}
-		<source src="{{ .RelPermalink }}" type="video/ogg">
+		<source src="{{ .Permalink }}" type="video/ogg">
 	{{ end }}
 </video>

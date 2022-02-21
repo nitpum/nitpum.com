@@ -1,8 +1,12 @@
-{{ $imgPath := .Destination | safeURL }}
+{{- $imgPath := .Destination | safeURL -}}
 
-{{ if not (strings.HasPrefix .Destination "http") -}}
+{{- if not (strings.HasPrefix .Destination "http") -}}
   {{ $imgPath = (.Destination | safeURL )}}
-{{ end }}
+{{- end -}}
+
+{{- if not (strings.HasPrefix .Destination "/") -}}
+	{{  $imgPath = (printf "%s%s" .Page.Permalink .Destination | safeURL ) }}
+{{- end -}}
 
 <img
   src="{{ $imgPath }}"
