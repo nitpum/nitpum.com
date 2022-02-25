@@ -3,6 +3,8 @@ languageCode: en-us
 title: nitpum
 theme: nitpum-blog
 enableRobotsTXT: true
+author:
+  name: nitpum
 
 params:
   description: nitpum blog
