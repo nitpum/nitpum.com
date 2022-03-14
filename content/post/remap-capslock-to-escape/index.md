@@ -1,8 +1,8 @@
 ---
 title: เปลี่ยนปุ่ม Caps Lock ให้เป็น Escape
 author: nitpum
-date: 2022-03-09T14:24:47.809Z
-lastmod: 2022-03-14T18:56:36.265Z
+date: 2022-03-15T14:24:47.809Z
+lastmod: 2022-03-14T18:59:41.120Z
 tags:
   - keybinding
   - powertoys
