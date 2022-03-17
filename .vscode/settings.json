@@ -1,8 +1,15 @@
 {
 	"prettier.resolveGlobalModules": true,
-	"frontMatter.preview.host": "http://localhost:1313",
 	"markdown.preview.fontSize": 18,
 	"editor.fontSize": 18,
+	"frontMatter.preview.host": "http://localhost:1313",
 	"frontMatter.content.fmHighlight": true,
-	"frontMatter.content.autoUpdateDate": true
+	"frontMatter.content.autoUpdateDate": true,
+	"frontMatter.content.pageFolders": [
+		{
+			"title": "Posts",
+			"path": "[[workspace]]/content/post"
+		}
+	],
+	"cSpell.words": ["kofi"]
 }
