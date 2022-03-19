@@ -46,7 +46,6 @@ h5,
 h6 {
 	color: var(--heading);
 	font-family: "Kanit", "Sarabun", "Roboto", "san-serif";
-	margin-top: 2em;
 }
 
 
@@ -85,17 +84,6 @@ h3, h4, h5, h6 {
 p, ul {
 	margin-top: 0;
 }
-
-
-// FIXME: Don't know why it not works
-// :not(div.highlight) {
-//   code {
-//     padding: 4px 8px;
-//     border-radius: 4px;
-//     color: var(--code-text);
-//     background-color: var(--code-bg);
-//   }
-// }
 
 table {
 	max-width: 100%;
