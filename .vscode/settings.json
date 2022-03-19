@@ -11,5 +11,12 @@
 			"path": "[[workspace]]/content/post"
 		}
 	],
-	"cSpell.words": ["isset", "kofi", "markdownify", "svgs", "Webring"]
+	"cSpell.words": [
+		"isset",
+		"kofi",
+		"markdownify",
+		"Sarabun",
+		"svgs",
+		"Webring"
+	]
 }
