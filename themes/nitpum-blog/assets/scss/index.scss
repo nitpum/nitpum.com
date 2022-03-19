@@ -1,6 +1,3 @@
-@import "core/color"; // TODO: Remove this file deprecated
-@import "core/size";
-@import "core/typo";
 @import "core/screen";
 
 @import "normalize";
@@ -25,5 +22,4 @@
 @import "modules/twitter";
 @import "modules/404";
 
-// Shortcodes
 @import "modules/notice";
