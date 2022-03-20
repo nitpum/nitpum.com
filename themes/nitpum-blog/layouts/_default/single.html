@@ -12,11 +12,14 @@
           </ul>
         {{ end }}
         <p>
-          <time datetime="{{ dateFormat "2006-01-02" .Date }}">
+					<time datetime="{{ dateFormat "2006-01-02" .Date }}">
+						{{ partial "svgs/calendar.svg" }}
             {{ dateFormat "January 02, 2006" .Date }}
           </time>
           {{ if gt .ReadingTime 0 }}
-            &bull; {{ .ReadingTime }} minutes read
+						<span class="read-time">
+							{{ partial "svgs/clock.svg" }} {{ .ReadingTime }} min read
+						</span>
           {{ end }}
         </p>
       </div>

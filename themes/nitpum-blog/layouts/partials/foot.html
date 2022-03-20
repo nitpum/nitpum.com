@@ -11,7 +11,7 @@
   });
 </script>
 
-{{ if .IsPage }}
+{{- if .IsPage -}}
 <!-- anchor-->
 	<script src="{{ "js/anchor.min.js" | absURL }}"></script>
   <script>
@@ -39,5 +39,5 @@
 		fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
 	</script>
-{{ end }}
+{{- end -}}
 
