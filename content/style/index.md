@@ -1,6 +1,7 @@
 ---
-title: "Style"
+title: Style
 date: 2020-12-22T22:38:16+07:00
+lastmod: 2022-03-20T14:34:31.375Z
 ---
 
 ## Typography
@@ -9,7 +10,7 @@ _Italic_
 
 **Bold**
 
-~~Strikethrough~~
+~~Strike through~~
 
 ~~_**Mixed**_~~
 
@@ -63,11 +64,11 @@ Anime
 ## Notice
 
 {{< notice note >}}
-Oh is just note... that fallen from the sky.
+The note that fell from the sky
 {{< /notice >}}
 
 {{< notice update >}}
-Looks like something has update.
+Looks like something has update
 {{< /notice >}}
 
 ## Table
