@@ -20,17 +20,24 @@
 />
 <meta
   name="description"
-  content="{{- with .Description }}{{ . }}{{- else }}{{- if .IsPage }}
-    {{- .Summary | default (printf "%s - %s" .Title  .Site.Title) }}{{- else }}
+  content="{{- with .Description }}{{ . }}{{- else -}}{{- if .IsPage -}}
+    {{- .Summary | default (printf "%s - %s" .Title  .Site.Title) }}{{- else -}}
     {{- with .Site.Params.description }}{{ . }}{{- end }}{{- end }}{{- end -}}"
 />
 
 <!-- Preload-->
-{{ $stylesOptions := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" true) }}
-{{ $styles := resources.Get "scss/index.scss" | toCSS $stylesOptions }}
+{{- $cssOptions := (dict "outputStyle" "compressed")  -}}
+{{- if not hugo.IsProduction -}}
+	{{- $cssOptions = merge $cssOptions (dict "enableSourceMap" true) -}}
+{{- end -}}
+{{- $normalizeStyles := resources.Get "scss/normalize.scss" | toCSS (merge (dict "targetPath" "normalize.css") $cssOptions) -}}
+<link rel="preload" href="{{ $normalizeStyles.Permalink }}" as="style" />
+{{- $fontStyles := resources.Get "scss/font.scss" | toCSS (merge (dict "targetPath" "font.css") $cssOptions) -}}
+<link rel="preload" href="{{ $fontStyles.Permalink }}" as="style" />
+{{- $styles := resources.Get "scss/index.scss" | toCSS (merge (dict "targetPath" "style.css") $cssOptions) -}}
 <link rel="preload" href="{{ $styles.Permalink }}" as="style" />
 
-{{ if .Params.canonicalURL -}}
+{{- if .Params.canonicalURL -}}
 <link
   rel="canonical"
   href="{{ if .Params.canonicalURL -}} {{ trim .Params.canonicalURL " " }} {{- else -}} {{ .Permalink }} {{- end }}"
@@ -112,7 +119,12 @@
 {{ end }}
 
 <!-- Styles-->
+<link rel="stylesheet" href="{{ $normalizeStyles.Permalink }}" as="style" />
+<link rel="stylesheet" href="{{ $fontStyles.Permalink }}" as="style" />
 <link rel="stylesheet" href="{{ $styles.Permalink }}" as="style" />
+
+{{ $printStyles := resources.Get "scss/print.scss" | toCSS (merge (dict "targetPath" "print.css") $cssOptions) }}
+<link rel="stylesheet" href="{{ $printStyles.Permalink }}" as="style" />
 
 <!-- RSS-->
 {{- range .AlternativeOutputFormats -}}
