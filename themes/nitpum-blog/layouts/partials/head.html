@@ -123,9 +123,6 @@
 <link rel="stylesheet" href="{{ $fontStyles.Permalink }}" as="style" />
 <link rel="stylesheet" href="{{ $styles.Permalink }}" as="style" />
 
-{{ $printStyles := resources.Get "scss/print.scss" | toCSS (merge (dict "targetPath" "print.css") $cssOptions) }}
-<link rel="stylesheet" href="{{ $printStyles.Permalink }}" as="style" />
-
 <!-- RSS-->
 {{- range .AlternativeOutputFormats -}}
   <link
