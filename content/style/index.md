@@ -1,7 +1,7 @@
 ---
 title: Style
 date: 2020-12-22T22:38:16+07:00
-lastmod: 2022-03-20T14:34:31.375Z
+lastmod: 2022-04-23T06:27:22.566Z
 ---
 
 ## Typography
@@ -73,10 +73,10 @@ Looks like something has update
 
 ## Table
 
-| Name  | Description |
-| ----- | ----------- |
-| Kabuto | Kamen rider |
-| Faiz | I'm Orphnoch |
+| Name   | Description          |
+| ------ | -------------------- |
+| Kabuto | Kamen rider          |
+| Faiz   | I'm Orphnoch         |
 | Decade | Just passing through |
 
 ## Code Blocks
@@ -89,9 +89,9 @@ HTML
 
 ```html
 <div class="text">
-  <span></span>
-  <p></p>
-  <a href="">Click here</a>
+	<span></span>
+	<p></p>
+	<a href="">Click here</a>
 </div>
 ```
 
@@ -100,8 +100,8 @@ Javascript
 ```js
 // TODO: should print username
 function helloWorld() {
-  var world = world;
-  console.log(`Hi ${world}`);
+	var world = world;
+	console.log(`Hi ${world}`);
 }
 ```
 
@@ -132,6 +132,32 @@ Bash
 git add -A
 
 git commit -m "Update code"
+```
+
+Highlight line and change start line no.
+
+```javascript {hl_lines=[12,"17-18"], linenostart=20}
+function useInput() {
+	const [input, setInput] = useState('')
+
+	const onChange = (e) => {
+		setInput(e.target.value)
+	}
+
+	return [input, onChange]
+}
+
+function InputField() {
+	const [input, onChange] = useInput()
+
+	return (
+		<input
+			type="text"
+			value={input}
+			onChange={onChange}
+		>
+	)
+}
 ```
 
 ## Blockquotes
