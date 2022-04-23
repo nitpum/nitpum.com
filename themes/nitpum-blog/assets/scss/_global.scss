@@ -19,6 +19,13 @@ main {
 	flex: 1;
 }
 
+:not(a) {
+	> b,
+	> strong {
+		color: var(--content-strong);
+	}
+}
+
 a {
 	color: var(--primary);
 	text-decoration-color: var(--link-underline-color);

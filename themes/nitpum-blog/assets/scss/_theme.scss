@@ -19,6 +19,7 @@
 	--container-width: 900px;
 
 	--content: rgba(0, 0, 0, 0.88);
+	--content-strong: #0a0b0c; 
 	--content-width: 960px;
 	--content-inner-width: 700px;
 	--content-side-padding: 16px;
@@ -43,7 +44,10 @@
 	--fg: #3a3a3a; // rgba(255, 255, 255, 0.12)
 	--primary: #35a65e; // #35a65e
 	--heading: #e1dedb;
+
 	--content: rgba(232, 230, 227, 0.8);
+	--content-strong: #e1dedb;
+
 	--code-text: #272822;
 	--code-bg: #f8f8f8;
 	--border-color: #444;
