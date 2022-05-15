@@ -30,6 +30,9 @@
 			</a>
 			{{ end }}
 		{{ end }}
+		<a href="{{ printf "%s/index.xml" .Site.BaseURL }}" rel="noopener">
+			{{ partial "svgs/rss.svg" }}
+		</a>
   </div>
 	<div>
 		<span
