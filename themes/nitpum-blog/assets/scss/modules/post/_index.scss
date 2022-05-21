@@ -73,6 +73,22 @@
     max-width: var(--content-inner-width);
     word-wrap: break-word;
 
+    h1, h2, h3, h4, h5, h6 {
+      &:hover, &:focus {
+        .anchor-link {
+          display: block;
+        } 
+      }
+    }
+
+		.anchor-link {
+			position: absolute;
+			margin-left: -2rem;
+			padding-right: 0.5em;
+			font-size: 1em;
+      display: none;
+		}
+
     img {
       filter: var(--image-filter);
     }

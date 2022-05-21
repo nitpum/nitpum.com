@@ -1,0 +1,4 @@
+<h{{ .Level }} id="{{ .Anchor | safeURL }}">
+	<a href="#{{ .Anchor | safeURL }}" class="anchor-link" aria-label="Anchor">{{ partial "svgs/link.svg" }}</a>
+		{{ .Text | safeHTML }}
+</h{{ .Level }}>
