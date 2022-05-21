@@ -1,8 +1,8 @@
 code {
-  padding: 4px 8px;
+	padding: 4px 8px;
 	border: var(--border-size) solid var(--border-color);
-  border-radius: var(--radius);
-  background-color: var(--fg);
+	border-radius: var(--radius);
+	background-color: var(--fg);
 }
 
 .highlight {
@@ -12,6 +12,7 @@ code {
 	margin-bottom: 20px;
 
 	code {
+		border: none;
 		--border-color: transparent;
 	}
 	

@@ -12,7 +12,7 @@ My personal website
 ## Requirement
 
 - Go 1.51+
-- Hugo v0.91.2+
+- Hugo v0.99.1+
 - Node.js (optional for prettier)
 
 ## Setup
@@ -28,13 +28,13 @@ Use prettier for js formatter
 ## Development
 
 ```sh
-hugo serve
+hugo server
 ```
 
 Render draft content
 
 ```sh
-hugo serve -D
+hugo server -D
 ```
 
 ## Build
