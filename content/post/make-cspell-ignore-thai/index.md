@@ -2,14 +2,17 @@
 title: ปิด Code Spell Checker ไม่ให้ตรวจภาษาไทย
 author: nitpum
 date: 2022-04-29T07:26:40.031Z
-lastmod: 2022-05-14T13:20:14.346Z
+lastmod: 2022-05-21T17:12:43.326Z
 tags:
   - vscode
+toc: false
 ---
 
 ใน VSCode มี extension [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) ไว้สำหรับตรวจคำผิดภาษาอังกฤษ ปัญหาคือ extension นี้ยังไม่ได้ทำมาให้รองรับภาษาไทย ทำให้เวลาเปิดโปรเจคที่มีภาษาไทยตัว extension จะไม่รู้จักและคิดว่าเป็นคำผิด แล้วคอยขึ้นเตือนเราอยู่ตลอดเวลา
 
 ![Code Spell Checker don't know thai](images/cspell-dont-know-thai.png)
+
+## วิธีแก้
 
 แต่ปัญหานี้จะหมดไปถ้าเราตั้งให้ ignore ภาษาไทยไว้ด้วยการใส่ Regex `/[\\u0E00-\\u0E7F]/g`
 
