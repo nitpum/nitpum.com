@@ -31,6 +31,8 @@
 	--code-text: #f8f8f2;
 	--code-bg: #272822;
 
+	--notice-color: var(--heading);
+	--notice-heading-color: #fff;
 	--notice-heading-font-size: 14px;
 
 	--notice-note-accent: #0047bf;
@@ -51,4 +53,7 @@
 	--code-text: #272822;
 	--code-bg: #f8f8f8;
 	--border-color: #444;
+
+	--notice-color: var(--heading);
+	--notice-heading-color: var(--heading);
 }

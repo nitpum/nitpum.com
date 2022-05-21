@@ -4,7 +4,7 @@
   margin-top: 40px;
   padding: 18px 18px;
   margin-bottom: 20px;
-  color: var(--heading);
+  color: var(--notice-color);
   border-radius: var(--radius);
   background-color: var(--notice-bg);
 	
@@ -18,6 +18,7 @@
     left: 4px;
     padding: 4px 10px;
     border-radius: var(--radius);
+		color: var(--notice-heading-color);
 		font-size: var(--notice-heading-font-size);
 		font-weight: bold;
 		text-transform: uppercase;
