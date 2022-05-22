@@ -25,12 +25,12 @@
 		{{ end }}
 		{{ if .Site.Params.Social.Webring }}
 			{{ with .Site.BaseURL }}
-			<a href="https://webring.wonderful.software#{{ trim . "https://" }}" rel="noopener">
+			<a href="https://webring.wonderful.software#{{ trim . "https://" }}" alt="Thailand Webring" rel="noopener">
 				{{ partial "svgs/webring.svg" }}
 			</a>
 			{{ end }}
 		{{ end }}
-		<a href="{{ printf "%s/index.xml" .Site.BaseURL }}" rel="noopener">
+		<a href="{{ printf "%s/index.xml" .Site.BaseURL }}" alt="Feed" rel="noopener">
 			{{ partial "svgs/rss.svg" }}
 		</a>
   </div>
