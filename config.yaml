@@ -47,7 +47,6 @@ related:
 
 markup:
   highlight:
-    lineNos: true
     lineNumbersInTable: true
 
 menu:

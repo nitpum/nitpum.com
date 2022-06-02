@@ -1,7 +1,7 @@
 ---
 title: Style
 date: 2020-12-22T22:38:16+07:00
-lastmod: 2022-04-23T06:27:22.566Z
+lastmod: 2022-06-02T12:15:23.613Z
 ---
 
 ## Typography
@@ -136,7 +136,7 @@ git commit -m "Update code"
 
 Highlight line and change start line no.
 
-```javascript {hl_lines=[12,"17-18"], linenostart=20}
+```javascript {linenos=table, hl_lines=[12,"17-18"], linenostart=20}
 function useInput() {
 	const [input, setInput] = useState('')
 
