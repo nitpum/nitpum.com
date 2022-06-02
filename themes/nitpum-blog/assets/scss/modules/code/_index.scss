@@ -23,5 +23,24 @@ code {
 		padding: 0;
 		background-color: transparent;
 	}
+
+	pre {
+		margin: 0;
+		padding: 8px 16px;
+	}
+
+	table {
+		pre {
+			padding: 0;
+		}
+
+		td {
+			&:first-child {
+				span {
+					display: flex;
+				}
+			}
+		}
+	}
 	
 }
