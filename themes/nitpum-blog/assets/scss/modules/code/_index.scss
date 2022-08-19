@@ -8,7 +8,7 @@ code {
 .highlight {
 	border: var(--border-size) solid var(--border-color);
 	border-radius: var(--radius);
-	overflow: hidden;
+	overflow: auto;
 	margin-bottom: 20px;
 
 	code {
