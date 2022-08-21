@@ -6,8 +6,9 @@ My personal website
 
 ## Features
 
-- Work offline
+- Work offline (local font, js, etc.)
 - Light/Dark mode
+- Javascript not required
 
 ## Requirement
 
@@ -24,6 +25,12 @@ npm install --global prettier-plugin-go-template
 ```
 
 Use prettier for js formatter
+
+## Create new post
+
+```bash
+hugo new --kind post post/<post-name>
+```
 
 ## Development
 
