@@ -1,6 +1,6 @@
 :root {
 	--bg: rgba(0, 0, 0, 0.05);
-	--fg: #fff;
+	--fg: white;
 	--primary: #2e8540; // #35a65e
 	--font-size: 18px;
 	--link-underline-color: rgba(53, 166, 94, 0.4);
@@ -9,17 +9,17 @@
 	--border-default: var(--border-size) solid var(--border-color);
 	--radius: 12px;
 	--shadow: -6px 8px 10px rgba(56, 30, 11, 0.1),
-	0px 2px 2px rgba(81, 41, 10, 0.2);
+		0px 2px 2px rgba(81, 41, 10, 0.2);
 	--image-filter: none;
 	--transform-time: 0.2s;
-	
-	--heading: #0a0b0c;
-	--heading-font-family:  "Kanit", "Sarabun", "Roboto", "san-serif";
+
+	--heading: black;
+	--heading-font-family: "Kanit", "Sarabun", "Roboto", "san-serif";
 
 	--container-width: 900px;
 
-	--content: rgba(0, 0, 0, 0.88);
-	--content-strong: #0a0b0c; 
+	--content: black;
+	--content-strong: black;
 	--content-width: 960px;
 	--content-inner-width: 736px;
 	--content-side-padding: 16px;
@@ -42,13 +42,13 @@
 }
 
 .dark {
-	--bg: #181a1b;
+	--bg: black;
 	--fg: #3a3a3a; // rgba(255, 255, 255, 0.12)
 	--primary: #35a65e; // #35a65e
-	--heading: #e1dedb;
+	--heading: white;
 
-	--content: rgba(232, 230, 227, 0.8);
-	--content-strong: #e1dedb;
+	--content: #bfbfbf;
+	--content-strong: white;
 
 	--code-text: #272822;
 	--code-bg: #f8f8f8;
