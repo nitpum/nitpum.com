@@ -2,7 +2,7 @@
 title: Vscode Quick Open Relative เปลี่ยนไฟล์เร็วขึ้น ไม่ต้องใช้เมาส์
 author: nitpum
 date: 2022-08-30T15:30:11Z
-lastmod: 2022-08-30T19:36:43.099Z
+lastmod: 2023-05-09T14:40:24.303Z
 tags:
   - vscode
   - vscode-extension
@@ -17,29 +17,28 @@ toc: false
 
 ```bash
 project
-|- src
-	|- components
-		|- Button
-			|- index.tsx
-			|- index.test.tsx
-			|- types.ts
-			|- styled.ts
-			|- constants.ts
-		|- Card
-			|- index.tsx
-			|- index.test.tsx
-			|- styled.ts
-	|- hooks
-		|- useDoSomething
-			|- index.ts
-			|- index.test.ts
-	|- utils
-		|- extractIdFromData
-			|- index.ts
-			|- index.test.ts
-|- scripts
-|- build
-|- ...
+├── build
+├── scripts
+└── src
+    ├── components
+    │   ├── Button
+    │   │   ├── constants.ts
+    │   │   ├── index.test.tsx
+    │   │   ├── index.tsx
+    │   │   ├── styled.ts
+    │   │   └── types.ts
+    │   └── Card
+    │       ├── index.test.tsx
+    │       ├── index.tsx
+    │       └── styled.ts
+    ├── hooks
+    │   └── useDoSomething
+    │       ├── index.test.ts
+    │       └── index.ts
+    └── utils
+        └── extractIdFromData
+            ├── index.test.ts
+            └── index.ts
 ```
 
 ตัวอย่างนี้จะเป็น Project structure ของ React (โพสต์นี้ขอไม่พูดถึงนะว่าแบบนี้มันดียังไง) แต่จะเห็นได้ว่าโค้ดจะถูกเก็บเอาไว้ที่ `src/` แล้วข้างในจะแบ่งของออกตามประเภท (components, hooks, utils) เข้าไปข้างในอีกก็จะแบ่งเป็นโฟลเดอร์ตามหน้าที่อีกที `src/components/Button` แล้วในนั้นค่อยเป็นไฟล์โค้ดจริงๆ ที่เกี่ยวกับเรื่องนั้นๆ `src/components/Button/index.ts`
