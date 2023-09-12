@@ -12,7 +12,7 @@ My personal website
 
 ## Requirement
 
-- Hugo v0.99.1+
+- Hugo v0.118.2+
 - Go 1.20+ (optional)
 - Node.js (optional for prettier)
 
