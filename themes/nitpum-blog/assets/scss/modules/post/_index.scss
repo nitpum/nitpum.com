@@ -14,14 +14,15 @@
 				margin: auto;
         height: auto;
       }
-    }
 
-    @include for-desktop-up {
-			svg,
-      img {
-        border-radius: var(--radius);
+      @include for-desktop-up {
+        svg,
+        img {
+          border-radius: var(--radius);
+        }
       }
     }
+
 
 		.read-time {
 			margin-left: 8px;
