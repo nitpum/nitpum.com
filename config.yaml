@@ -24,7 +24,6 @@ params:
   analytics:
     goatCounter:
       url: https://nitpum.goatcounter.com/count
-      script: //gc.zgo.at/count.js
   social:
     facebook: nitpum
     twitter: nitpum

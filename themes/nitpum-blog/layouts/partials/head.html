@@ -136,7 +136,7 @@
 {{ end }}
 
 {{- if and .Site.Params.Analytics.GoatCounter.Url .Site.Params.Analytics.GoatCounter.Script hugo.IsProduction -}}
-  <script data-goatcounter="{{ .Site.Params.Analytics.GoatCounter.Url }}" async src="{{ .Site.Params.Analytics.GoatCounter.Script }}"></script>
+  <script data-goatcounter="{{ .Site.Params.Analytics.GoatCounter.Url }}" async src="{{ "js/goat-counter.js" | absURL }}"></script>
 {{- end -}}
 
 <!-- Generator -->
