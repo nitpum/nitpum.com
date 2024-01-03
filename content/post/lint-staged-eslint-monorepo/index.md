@@ -2,7 +2,7 @@
 title: Make lint-staged + eslint work in monorepo
 author: nitpum
 date: 2024-01-03T22:38:16+07:00
-lastmod: 2024-01-03T19:01:10.692Z
+lastmod: 2024-01-03T19:02:49.413Z
 tags:
     - eslint
     - lint-staged
@@ -31,7 +31,6 @@ Imagine a monorepo project that structure like this
 And has eslint command in `.lintstagedrc.json`
 
 ```json
-// ./lintstagedrc.json
 { "*.js": ["eslint --fix"] }
 ```
 
