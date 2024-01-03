@@ -135,7 +135,7 @@
   <link rel="alternate" hreflang="{{- .Lang -}}" href="{{- .Permalink -}}" />
 {{ end }}
 
-{{- if and .Site.Params.Analytics.GoatCounter.Url .Site.Params.Analytics.GoatCounter.Script hugo.IsProduction -}}
+{{- if and .Site.Params.Analytics.GoatCounter.Url hugo.IsProduction -}}
   <script data-goatcounter="{{ .Site.Params.Analytics.GoatCounter.Url }}" async src="{{ "js/goat-counter.js" | absURL }}"></script>
 {{- end -}}
 
