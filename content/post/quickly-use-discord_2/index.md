@@ -1,16 +1,18 @@
 ---
-title: "วิธีใช้ Discord ฉบับเร่งรีบ เพื่อนบอกให้ใช้"
+title: วิธีใช้ Discord ฉบับเร่งรีบ เพื่อนบอกให้ใช้
 date: 2017-06-02T23:01:00.001+07:00
+lastmod: 2024-01-06T17:23:02.586Z
 languageCode: th
-aliases: ["/2017/06/quickly-use-discord_2.html"]
+aliases:
+    - /2017/06/quickly-use-discord_2.html
 tags:
-  - blog
-  - วิธีการ
-  - game
-  - เกม
-  - discord
-  - how-to
-  - ติดตั้งโปรแกรม
+    - blog
+    - วิธีการ
+    - game
+    - เกม
+    - discord
+    - how-to
+    - ติดตั้งโปรแกรม
 ---
 
 "คุยกันผ่าน Discord นะ" เชื่อว่าต้องมีคนเคยได้ยินคำพูดนี้แล้วแต่ไม่รู้ว่าต้องทำยังไงแน่นอน  
@@ -23,7 +25,7 @@ tags:
 การใช้งาน Discord นั้นสามารถใช้ได้หลายทางครับ
 
 - [ใช้ผ่านเว็บเบราว์เซอร์](https://discord.com/) เข้าไปในเว็บแล้วคลิกที่ปุ่ม Open Discord in your browser
-- [โหลดลงคอม](https://discordapp.com/download) (Windows, Mac และ Linux)
+- [โหลดลงคอม](https://discord.com/download) (Windows, Mac และ Linux)
 - ใช้ผ่านแอพมือถือ [Android](https://play.google.com/store/apps/details?id=com.discord) และ [iOS](https://itunes.apple.com/us/app/discord-chat-for-games/id985746746)
 
 ## 2. จากนั้นก็สมัครบัญชี
