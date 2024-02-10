@@ -111,6 +111,10 @@ table {
 	display: flex;
 }
 
+.flex-col {
+	flex-direction: column;
+}
+
 .flex-column-reverse {
 	flex-direction: column-reverse;
 }

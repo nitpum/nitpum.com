@@ -28,15 +28,15 @@
 			</figure>
 		{{- end -}}
 
-		<div class="flex flex-column-reverse">
+		<div class="flex flex-col">
 			<h2 class="title">{{ .Title }}</h2>
 			{{ if .IsPage }}
-      <p>
-				<time datetime="{{ dateFormat "2006-01-02" .Date }}">
-					{{ dateFormat "02 Jan 2006" .Date }}
-        </time>
-        &bull; {{ .ReadingTime }} min
-      </p>
+				<p>
+					<time datetime="{{ dateFormat "2006-01-02" .Date }}">
+								{{ dateFormat "02 Jan 2006" .Date }}
+					</time>
+					&bull; {{ .ReadingTime }} min
+				</p>
 			{{ end }}
 		</div>
   </article>
