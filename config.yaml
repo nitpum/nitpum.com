@@ -3,12 +3,12 @@ languageCode: en-us
 title: nitpum
 theme: nitpum-blog
 enableRobotsTXT: true
-author:
-  name: nitpum
 
 params:
   description: nitpum blog
   copyright: Copyright
+  author:
+    name: nitpum
   logo:
     Permalink: /logo-96x96.jpg
   defaultTheme: auto
@@ -32,9 +32,10 @@ params:
     kofi: nitpum
     webring: nitpum.com
 
-paginate: 18
+pagination:
+  pagerSize: 18
 permalinks:
-  post: /post/:filename/
+  post: /post/:contentbasename/
 
 related:
   includeNewer: true

@@ -12,8 +12,8 @@ My personal website
 
 ## Requirement
 
-- Hugo v0.118.2+
-- Go 1.20+ (optional)
+- Hugo v0.152.2+
+- Go 1.24+ (optional)
 - Node.js (optional for prettier)
 
 ## Setup
