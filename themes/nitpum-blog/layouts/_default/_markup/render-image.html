@@ -8,6 +8,21 @@
 	{{  $imgPath = (printf "%s%s" .Page.Permalink .Destination | safeURL ) }}
 {{- end -}}
 
+{{ if .Title }}
+	<figure>
+		<img
+			src="{{ $imgPath }}"
+			alt="{{ .Text }}"
+			loading="lazy"
+			{{ if not (strings.HasPrefix .Destination "http") -}}
+			{{ $img := imageConfig (printf "content/%s/%s" .Page.File.Dir .Destination) }}
+			width="{{ $img.Width }}"
+			height="{{ $img.Height }}"
+			{{ end }}
+		/>
+		<figcaption class="text-center">{{ .Title }}</figcaption>
+	</figure>
+{{ else }}
 <img
   src="{{ $imgPath }}"
   alt="{{ .Text }}"
@@ -18,3 +33,4 @@
   height="{{ $img.Height }}"
   {{ end }}
 />
+{{ end }}
