@@ -2,7 +2,7 @@
 title: มาซื้อไฟล์เพลงญี่ปุ่นถูกลิขสิทธิ์แบบ DRM-Free กันเถอะ! ด้วย Ototoy
 author: nitpum
 date: 2026-02-01T10:52:43+07:00
-lastmod: 2026-02-01T14:08:02.000Z
+lastmod: 2026-02-01T14:31:27.621Z
 languageCode: th
 tags:
     - drm-free
