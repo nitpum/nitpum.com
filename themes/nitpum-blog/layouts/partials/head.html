@@ -140,7 +140,7 @@
 {{- end -}}
 
 {{- if and .Site.Params.Analytics.Umami.Id hugo.IsProduction -}}
-  <script defer src="{{ "js/goat-counter.js" | absURL }}" data-website-id="{{ .Site.Params.Analytics.Umami.Id }}" ></script>
+  <script defer src="{{ "js/umami.js" | absURL }}" data-website-id="{{ .Site.Params.Analytics.Umami.Id }}" ></script>
 {{- end -}}
 
 <!-- Generator -->
