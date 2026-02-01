@@ -139,6 +139,10 @@
   <script data-goatcounter="{{ .Site.Params.Analytics.GoatCounter.Url }}" async src="{{ "js/goat-counter.js" | absURL }}"></script>
 {{- end -}}
 
+{{- if and .Site.Params.Analytics.Umami.Id hugo.IsProduction -}}
+  <script defer src="{{ "js/goat-counter.js" | absURL }}" data-website-id="{{ .Site.Params.Analytics.Umami.Id }}" ></script>
+{{- end -}}
+
 <!-- Generator -->
 {{- hugo.Generator }}
 <meta name="git-commit" content="{{ hugo.CommitHash }}" />

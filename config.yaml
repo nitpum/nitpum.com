@@ -24,6 +24,8 @@ params:
   analytics:
     goatCounter:
       url: https://nitpum.goatcounter.com/count
+    umami:
+      id: 7eecbc66-eefb-4cfc-b17b-563f1eb2e87d
   social:
     facebook: nitpum
     twitter: nitpum
