@@ -1,6 +1,6 @@
 {{ if not (eq .Params.NoCover true) }}		
 	{{ with .Resources }}
-		{{ with .GetMatch "cover.*" }}
+		{{ with .GetMatch "cover.{webp,jpg,jpeg,png}" }}
 			{{ $cover := . }}
 			{{ with $cover }}
 				<figure>

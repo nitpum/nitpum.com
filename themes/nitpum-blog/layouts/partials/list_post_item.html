@@ -5,7 +5,7 @@
 		{{- $coverHeight := "144" -}}
 		{{- if not (eq .Params.NoCover true) -}}
 
-			{{- with .Resources.GetMatch "cover.*" -}}
+			{{- with .Resources.GetMatch "cover.{webp,jpg,jpeg,png}" -}}
 				{{- $cover = . -}}
 				{{- with $cover.Fill "288x144 center" -}}
 					{{- $cover = .Permalink -}}
