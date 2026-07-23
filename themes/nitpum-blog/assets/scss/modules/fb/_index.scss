@@ -2,3 +2,36 @@
 	margin: auto;
 	width: 340px;
 }
+
+.facebook-share {
+	background-color: #1877f2;
+	color: #fff;
+	border-radius: 4px;
+	font-size: 13px;
+	font-weight: 700;
+	height: 28px;
+	padding: 0 8px;
+	cursor: pointer;
+	font-family: Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+	position: relative;
+	-webkit-user-select: none;
+	white-space: nowrap;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	svg {
+		width: 16px;
+		height: 16px;
+		aspect-ratio: auto 16 / 16;
+	}
+
+	span {
+		padding-left: 4px;
+		padding-right: 4px;
+		font-size: 13px;
+		font-weight: 700;
+	}
+}
